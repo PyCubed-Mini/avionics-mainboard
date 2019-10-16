@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name spriteSAMD-rescue)(type Legacy)(uri ${KIPRJMOD}/spriteSAMD-rescue.lib)(options "")(descr ""))
+  (lib (name spriteSAMD-eagle-import)(type Legacy)(uri /Users/hollydinkel/Documents/AA236/avionics-motherboard/Motherboardv1/Motherboard/spriteSAMD-eagle-import.lib)(options "")(descr ""))
+  (lib (name Motherboard-rescue)(type Legacy)(uri ${KIPRJMOD}/Motherboard-rescue.lib)(options "")(descr ""))
+)
