@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSAMD51G18A-MU
+D ARM Microcontrollers - MCU 120MHZ 256KB FLASH 4 8 QFN PKG 85C
+K
+F https://componentsearchengine.com/Datasheets/5/ATSAMD51G18A-MU.pdf
+$ENDCMP
+#
+#End Doc Library
