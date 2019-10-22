@@ -262,12 +262,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0108
 U 1 1 5D7F36A0
-P 5000 4300
-F 0 "#PWR0108" H 5000 4150 50  0001 C CNN
-F 1 "+3V3" H 5015 4473 50  0000 C CNN
-F 2 "" H 5000 4300 50  0001 C CNN
-F 3 "" H 5000 4300 50  0001 C CNN
-	1    5000 4300
+P 5150 4300
+F 0 "#PWR0108" H 5150 4150 50  0001 C CNN
+F 1 "+3V3" H 5165 4473 50  0000 C CNN
+F 2 "" H 5150 4300 50  0001 C CNN
+F 3 "" H 5150 4300 50  0001 C CNN
+	1    5150 4300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1488,7 +1488,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 6300 4550 6300
 Wire Wire Line
-	4450 5800 4550 5800
+	4450 5800 5250 5800
 Wire Wire Line
 	4450 5300 4550 5300
 Wire Wire Line
@@ -1504,7 +1504,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 4400 4600 4400
 Wire Wire Line
-	4450 4300 5000 4300
+	4450 4300 5150 4300
 Wire Wire Line
 	4450 4200 4600 4200
 Wire Wire Line
@@ -1512,7 +1512,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 5400 4450 5400
 Wire Wire Line
-	4550 5900 4450 5900
+	5300 5900 5100 5900
 $Comp
 L mainboard-rescue:ATSAMD51G_TQFN48- U2
 U 1 1 5C58A0F8
@@ -1526,7 +1526,7 @@ F 3 "" H 2950 5900 50  0001 C CNN
 $EndComp
 Text GLabel 4550 6200 2    50   Input ~ 0
 EN_CAM
-Text GLabel 4550 5800 2    59   BiDi ~ 0
+Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
 Text GLabel 5200 1250 0    50   Input ~ 0
 3V3
@@ -1556,15 +1556,15 @@ Text GLabel 6100 1650 2    50   Input ~ 0
 COIL3P
 Text GLabel 6100 1750 2    50   Input ~ 0
 COIL3N
-Text GLabel 4550 5900 2    59   BiDi ~ 0
+Text GLabel 5300 5900 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
-	4450 4000 4550 4000
+	4450 4000 4650 4000
 Wire Wire Line
-	4550 4100 4450 4100
-Text GLabel 4550 4000 2    59   BiDi ~ 0
+	4700 4100 4500 4100
+Text GLabel 4700 4000 2    59   BiDi ~ 0
 SDA1
-Text GLabel 4550 4100 2    59   BiDi ~ 0
+Text GLabel 4700 4100 2    59   BiDi ~ 0
 SCL1
 Wire Wire Line
 	4550 5700 4450 5700
@@ -1584,4 +1584,97 @@ Text GLabel 6100 1950 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
 	4550 6200 4450 6200
+$Comp
+L Device:R_US R?
+U 1 1 5DB0C8A9
+P 4500 3950
+F 0 "R?" H 4600 3750 50  0000 C CNN
+F 1 "10K" H 4600 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4540 3940 50  0001 C CNN
+F 3 "~" H 4500 3950 50  0001 C CNN
+	1    4500 3950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4500 4100
+Wire Wire Line
+	4500 4100 4450 4100
+$Comp
+L Device:R_US R?
+U 1 1 5DB0D4A3
+P 4650 3850
+F 0 "R?" H 4550 3800 50  0000 C CNN
+F 1 "10K" H 4550 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4690 3840 50  0001 C CNN
+F 3 "~" H 4650 3850 50  0001 C CNN
+	1    4650 3850
+	-1   0    0    1   
+$EndComp
+Connection ~ 4650 4000
+Wire Wire Line
+	4650 4000 4700 4000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB0E5CD
+P 4650 3600
+F 0 "#PWR?" H 4650 3450 50  0001 C CNN
+F 1 "+3V3" H 4665 3773 50  0000 C CNN
+F 2 "" H 4650 3600 50  0001 C CNN
+F 3 "" H 4650 3600 50  0001 C CNN
+	1    4650 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3600 4650 3700
+Wire Wire Line
+	4500 3800 4500 3700
+Wire Wire Line
+	4500 3700 4650 3700
+Connection ~ 4650 3700
+NoConn ~ 1150 2200
+$Comp
+L Device:R_US R?
+U 1 1 5DB33981
+P 5100 5750
+F 0 "R?" H 5200 5550 50  0000 C CNN
+F 1 "10K" H 5200 5650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5140 5740 50  0001 C CNN
+F 3 "~" H 5100 5750 50  0001 C CNN
+	1    5100 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DB33987
+P 5250 5650
+F 0 "R?" H 5150 5600 50  0000 C CNN
+F 1 "10K" H 5150 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5290 5640 50  0001 C CNN
+F 3 "~" H 5250 5650 50  0001 C CNN
+	1    5250 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DB3398D
+P 5250 5400
+F 0 "#PWR?" H 5250 5250 50  0001 C CNN
+F 1 "+3V3" H 5265 5573 50  0000 C CNN
+F 2 "" H 5250 5400 50  0001 C CNN
+F 3 "" H 5250 5400 50  0001 C CNN
+	1    5250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5400 5250 5500
+Wire Wire Line
+	5100 5600 5100 5500
+Wire Wire Line
+	5100 5500 5250 5500
+Connection ~ 5250 5500
+Connection ~ 5100 5900
+Wire Wire Line
+	5100 5900 4450 5900
+Connection ~ 5250 5800
+Wire Wire Line
+	5250 5800 5300 5800
 $EndSCHEMATC
