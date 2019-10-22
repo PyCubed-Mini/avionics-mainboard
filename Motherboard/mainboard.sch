@@ -591,9 +591,9 @@ Wire Wire Line
 	1450 6100 1350 6100
 Text GLabel 1350 6100 0    50   BiDi ~ 0
 RF_DIO2
-Text GLabel 4550 4100 2    50   BiDi ~ 0
+Text GLabel 4550 5600 2    50   BiDi ~ 0
 RF_DIO3
-Text GLabel 4550 4000 2    50   Output ~ 0
+Text GLabel 4550 5400 2    50   Output ~ 0
 RF_BUSY
 Text GLabel 4550 6900 2    50   BiDi ~ 0
 RF_DIO1
@@ -1281,10 +1281,7 @@ MOZ_1
 Text GLabel 8100 2150 2    50   Input ~ 0
 MOZ_2
 Wire Wire Line
-	7500 2600 7500 2550
-Wire Wire Line
 	7500 2550 7500 2450
-Connection ~ 7500 2550
 Wire Wire Line
 	7600 2450 7500 2450
 Connection ~ 7500 2450
@@ -1299,8 +1296,6 @@ F 3 "" H 8100 1850 50  0001 C CNN
 	1    8100 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 1900 8100 1850
 $Comp
 L power:GND #PWR?
 U 1 1 5DCE9737
@@ -1312,8 +1307,6 @@ F 3 "" H 8100 2250 50  0001 C CNN
 	1    8100 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 2300 8100 2250
 $Comp
 L Device:C C?
 U 1 1 5DD0AEB4
@@ -1420,10 +1413,7 @@ MOZ_1
 Text GLabel 10000 2100 2    50   Input ~ 0
 MOZ_2
 Wire Wire Line
-	9400 2550 9400 2500
-Wire Wire Line
 	9400 2500 9400 2400
-Connection ~ 9400 2500
 Wire Wire Line
 	9500 2400 9400 2400
 Connection ~ 9400 2400
@@ -1453,36 +1443,28 @@ F 3 "" H 10000 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10000 2250 10000 2200
-Connection ~ 8100 1850
-Connection ~ 8100 2250
 Connection ~ 10000 1800
 Connection ~ 10000 2200
 Text GLabel 5050 2950 0    50   Input ~ 0
 BATT_P
 Text GLabel 5050 3050 0    50   Output ~ 0
-MOSI_1
+MOSI
 Text GLabel 5050 3250 0    50   Input ~ 0
-MISO_1
+MISO
 Text GLabel 5050 3350 0    50   Input ~ 0
-SCK_1
-Text GLabel 6100 3400 2    50   Input ~ 0
-PWR_EN
-Text GLabel 6100 3000 2    50   Input ~ 0
+SCK
+Text GLabel 5950 3350 2    50   Input ~ 0
+EN_CAM
+Text GLabel 5950 2950 2    50   Input ~ 0
 GND
 Text GLabel 5050 3150 0    50   Input ~ 0
-CS_1
-Text GLabel 6100 3100 2    50   Input ~ 0
+CS_CAM
+Text GLabel 5950 3050 2    50   Input ~ 0
 BATT_N
-Text GLabel 4450 5600 2    50   Output ~ 0
-MOSI_1
-Text GLabel 4450 6100 2    50   Input ~ 0
-SCK_1
-Text GLabel 4450 6000 2    50   Input ~ 0
-MISO_1
-Text GLabel 4450 5700 2    50   Input ~ 0
-CS_1
-NoConn ~ 6100 3200
-NoConn ~ 6100 3300
+Text GLabel 4550 5700 2    50   Input ~ 0
+CS_CAM
+NoConn ~ 5950 3150
+NoConn ~ 5950 3250
 Connection ~ 1450 7000
 Wire Wire Line
 	1450 7000 1450 6800
@@ -1506,7 +1488,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 6300 4550 6300
 Wire Wire Line
-	4450 5900 4550 5900
+	4450 5800 4550 5800
 Wire Wire Line
 	4450 5300 4550 5300
 Wire Wire Line
@@ -1526,11 +1508,11 @@ Wire Wire Line
 Wire Wire Line
 	4450 4200 4600 4200
 Wire Wire Line
-	4550 4100 4450 4100
+	4550 5600 4450 5600
 Wire Wire Line
-	4550 4000 4450 4000
+	4550 5400 4450 5400
 Wire Wire Line
-	4550 5800 4450 5800
+	4550 5900 4450 5900
 $Comp
 L mainboard-rescue:ATSAMD51G_TQFN48- U2
 U 1 1 5C58A0F8
@@ -1542,12 +1524,10 @@ F 3 "" H 2950 5900 50  0001 C CNN
 	1    2950 5900
 	1    0    0    -1  
 $EndComp
-Text GLabel 4500 5800 2    59   BiDi ~ 0
-SDA
-Text GLabel 4450 6200 2    50   Input ~ 0
-PWR_EN
-Text GLabel 4550 5900 2    59   BiDi ~ 0
-SCL
+Text GLabel 4550 6200 2    50   Input ~ 0
+EN_CAM
+Text GLabel 4550 5800 2    59   BiDi ~ 0
+SCL2
 Text GLabel 5200 1250 0    50   Input ~ 0
 3V3
 Text GLabel 5200 1350 0    50   Input ~ 0
@@ -1560,10 +1540,6 @@ Text GLabel 5200 1650 0    50   Input ~ 0
 BURN1
 Text GLabel 5200 1750 0    50   Input ~ 0
 BURN2
-Text GLabel 5200 1850 0    50   Input ~ 0
-SUN1
-Text GLabel 5200 1950 0    50   Input ~ 0
-SUN2
 Text GLabel 6100 1250 2    50   Input ~ 0
 COIL1P
 Text GLabel 6100 1350 2    50   Input ~ 0
@@ -1572,9 +1548,6 @@ Wire Wire Line
 	4750 1450 4700 1450
 Wire Wire Line
 	4750 1450 4750 1500
-Connection ~ 4750 1500
-Wire Wire Line
-	4750 1500 4750 1550
 Text GLabel 6100 1450 2    50   Input ~ 0
 COIL2P
 Text GLabel 6100 1550 2    50   Input ~ 0
@@ -1583,4 +1556,32 @@ Text GLabel 6100 1650 2    50   Input ~ 0
 COIL3P
 Text GLabel 6100 1750 2    50   Input ~ 0
 COIL3N
+Text GLabel 4550 5900 2    59   BiDi ~ 0
+SDA2
+Wire Wire Line
+	4450 4000 4550 4000
+Wire Wire Line
+	4550 4100 4450 4100
+Text GLabel 4550 4000 2    59   BiDi ~ 0
+SDA1
+Text GLabel 4550 4100 2    59   BiDi ~ 0
+SCL1
+Wire Wire Line
+	4550 5700 4450 5700
+Text Notes 1650 7550 0    50   ~ 0
+UART:\nTX: PB08\nRX: PB09\n
+Text Notes 2100 7650 0    50   ~ 0
+SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
+Text Notes 2600 7900 0    50   ~ 0
+I2C_1\nSCL: PA01\nSDA: PA00\n\nI2C_2\nSCL: PA16\nSDA: PA17\n
+Text GLabel 5200 1950 0    59   BiDi ~ 0
+SDA1
+Text GLabel 5200 1850 0    59   BiDi ~ 0
+SCL1
+Text GLabel 6100 1850 2    59   BiDi ~ 0
+SCL2
+Text GLabel 6100 1950 2    59   BiDi ~ 0
+SDA2
+Wire Wire Line
+	4550 6200 4450 6200
 $EndSCHEMATC
