@@ -1677,6 +1677,6 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/706678
 $EndComp
 Text GLabel 5050 2950 0    50   Input ~ 0
 BATT_P
-Text GLabel 1450 5900 0    59   BiDi ~ 0
+Text GLabel 1450 6000 0    59   BiDi ~ 0
 WDT_WDI
 $EndSCHEMATC
