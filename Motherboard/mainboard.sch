@@ -1503,9 +1503,9 @@ Text GLabel 4550 6200 2    50   Input ~ 0
 EN_CAM
 Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
-Text GLabel 5200 1250 0    50   Input ~ 0
+Text GLabel 6100 2250 2    50   Input ~ 0
 3V3
-Text GLabel 5200 1350 0    50   Input ~ 0
+Text GLabel 5200 2250 0    50   Input ~ 0
 GND
 Text GLabel 6100 2350 2    50   Input ~ 0
 BATT_P
@@ -1515,7 +1515,7 @@ Text GLabel 5200 1650 0    50   Input ~ 0
 BURN1
 Text GLabel 5200 1750 0    50   Input ~ 0
 BURN2
-Text GLabel 6100 1250 2    50   Input ~ 0
+Text GLabel 5200 1350 0    50   Input ~ 0
 COIL1P
 Text GLabel 6100 1350 2    50   Input ~ 0
 COIL1N
@@ -1553,9 +1553,9 @@ Text GLabel 6100 1950 2    59   BiDi ~ 0
 SDA1
 Text GLabel 5200 1950 0    59   BiDi ~ 0
 SCL1
-Text GLabel 5200 1850 0    59   BiDi ~ 0
+Text GLabel 5200 1250 0    59   BiDi ~ 0
 SCL2
-Text GLabel 6100 1850 2    59   BiDi ~ 0
+Text GLabel 6100 1250 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
 	4550 6200 4450 6200
@@ -1677,4 +1677,6 @@ F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/706678
 $EndComp
 Text GLabel 5050 2950 0    50   Input ~ 0
 BATT_P
+Text GLabel 1450 6000 0    59   BiDi ~ 0
+WDT_WDI
 $EndSCHEMATC
