@@ -1549,13 +1549,13 @@ Text Notes 2100 7650 0    50   ~ 0
 SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
 Text Notes 2600 7900 0    50   ~ 0
 I2C_1\nSCL: PA01\nSDA: PA00\n\nI2C_2\nSCL: PA16\nSDA: PA17\n
-Text GLabel 5200 1950 0    59   BiDi ~ 0
-SDA1
-Text GLabel 5200 1850 0    59   BiDi ~ 0
-SCL1
-Text GLabel 6100 1850 2    59   BiDi ~ 0
-SCL2
 Text GLabel 6100 1950 2    59   BiDi ~ 0
+SDA1
+Text GLabel 5200 1950 0    59   BiDi ~ 0
+SCL1
+Text GLabel 5200 1850 0    59   BiDi ~ 0
+SCL2
+Text GLabel 6100 1850 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
 	4550 6200 4450 6200
