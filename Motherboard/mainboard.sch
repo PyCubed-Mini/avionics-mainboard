@@ -1677,4 +1677,6 @@ Wire Wire Line
 Connection ~ 5250 5800
 Wire Wire Line
 	5250 5800 5300 5800
+Text GLabel 4450 6000 2    50   Output ~ 0
+CS_IMU
 $EndSCHEMATC
