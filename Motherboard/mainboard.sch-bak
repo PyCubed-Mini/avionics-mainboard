@@ -1273,9 +1273,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/drv8848.pdf" H 6350 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8100 1650 2    50   Input ~ 0
-MINX_1
+MOX_1
 Text GLabel 8100 1750 2    50   Input ~ 0
-MINX_2
+MOX_2
 Text GLabel 8100 2050 2    50   Input ~ 0
 MOZ_1
 Text GLabel 8100 2150 2    50   Input ~ 0
