@@ -15,10 +15,10 @@
   )
 
   (layers
-    (0 Top power hide)
+    (0 Top power)
     (1 In1.Cu mixed hide)
     (2 In2.Cu mixed hide)
-    (31 Bottom power)
+    (31 Bottom power hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user hide)
