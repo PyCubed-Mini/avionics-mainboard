@@ -900,27 +900,6 @@ F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Conne
 	1    0    0    -1  
 $EndComp
 $Comp
-L mainboard-rescue:XF2M-1015-1A-symbols J5
-U 1 1 5DAE07E7
-P 5050 2950
-F 0 "J5" H 5500 3215 50  0000 C CNN
-F 1 "XF2M-1015-1A" H 5500 3124 50  0000 C CNN
-F 2 "custom-footprints:XF2M-1015-1A" H 5800 3050 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 5800 2950 50  0001 L CNN
-F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 5800 2850 50  0001 L CNN "Description"
-F 5 "" H 5800 2750 50  0001 L CNN "Height"
-F 6 "Omron Electronics" H 5800 2650 50  0001 L CNN "Manufacturer_Name"
-F 7 "XF2M-1015-1A" H 5800 2550 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "653-XF2M-1015-1A" H 5800 2450 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 5800 2350 50  0001 L CNN "Mouser Price/Stock"
-F 10 "7315772P" H 5800 2250 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 5800 2150 50  0001 L CNN "RS Price/Stock"
-F 12 "70667825" H 5800 2050 50  0001 L CNN "Allied_Number"
-F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 5800 1950 50  0001 L CNN "Allied Price/Stock"
-	1    5050 2950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H4
 U 1 1 5DAAE797
 P 9850 6650
@@ -1445,9 +1424,7 @@ Wire Wire Line
 	10000 2250 10000 2200
 Connection ~ 10000 1800
 Connection ~ 10000 2200
-Text GLabel 5050 2950 0    50   Input ~ 0
-BATT_P
-Text GLabel 5050 3050 0    50   Output ~ 0
+Text GLabel 5950 3250 2    50   Output ~ 0
 MOSI
 Text GLabel 5050 3250 0    50   Input ~ 0
 MISO
@@ -1457,14 +1434,12 @@ Text GLabel 5950 3350 2    50   Input ~ 0
 EN_CAM
 Text GLabel 5950 2950 2    50   Input ~ 0
 GND
-Text GLabel 5050 3150 0    50   Input ~ 0
+Text GLabel 5950 3150 2    50   Input ~ 0
 CS_CAM
 Text GLabel 5950 3050 2    50   Input ~ 0
 BATT_N
 Text GLabel 4550 5700 2    50   Input ~ 0
 CS_CAM
-NoConn ~ 5950 3150
-NoConn ~ 5950 3250
 Connection ~ 1450 7000
 Wire Wire Line
 	1450 7000 1450 6800
@@ -1532,9 +1507,9 @@ Text GLabel 5200 1250 0    50   Input ~ 0
 3V3
 Text GLabel 5200 1350 0    50   Input ~ 0
 GND
-Text GLabel 5200 1450 0    50   Input ~ 0
+Text GLabel 6100 2350 2    50   Input ~ 0
 BATT_P
-Text GLabel 5200 1550 0    50   Input ~ 0
+Text GLabel 5200 2350 0    50   Input ~ 0
 BATT_N
 Text GLabel 5200 1650 0    50   Input ~ 0
 BURN1
@@ -1677,4 +1652,29 @@ Wire Wire Line
 Connection ~ 5250 5800
 Wire Wire Line
 	5250 5800 5300 5800
+Text GLabel 4450 6000 2    50   Output ~ 0
+CS_IMU
+$Comp
+L mainboard-rescue:XF2M-1015-1A-symbols J5
+U 1 1 5DAE07E7
+P 5050 2950
+F 0 "J5" H 5500 3215 50  0000 C CNN
+F 1 "XF2M-1015-1A" H 5500 3124 50  0000 C CNN
+F 2 "custom-footprints:XF2M-1015-1A" H 5800 3050 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/3/XF2M-1015-1A.pdf" H 5800 2950 50  0001 L CNN
+F 4 "0.5mm Rotary backlock 10 way Omron XF2M Series 0.5mm Pitch 10 Way Right Angle SMT Female FPC Connector Locking Mechanism, Top and Bottom Contact" H 5800 2850 50  0001 L CNN "Description"
+F 5 "" H 5800 2750 50  0001 L CNN "Height"
+F 6 "Omron Electronics" H 5800 2650 50  0001 L CNN "Manufacturer_Name"
+F 7 "XF2M-1015-1A" H 5800 2550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "653-XF2M-1015-1A" H 5800 2450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-XF2M-1015-1A" H 5800 2350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7315772P" H 5800 2250 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7315772P" H 5800 2150 50  0001 L CNN "RS Price/Stock"
+F 12 "70667825" H 5800 2050 50  0001 L CNN "Allied_Number"
+F 13 "https://www.alliedelec.com/omron-electronic-components-xf2m-1015-1a/70667825/" H 5800 1950 50  0001 L CNN "Allied Price/Stock"
+	1    5050 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5050 2950 0    50   Input ~ 0
+BATT_P
 $EndSCHEMATC
