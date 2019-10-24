@@ -1506,19 +1506,17 @@ BURN2
 Text GLabel 5200 1350 0    50   Input ~ 0
 COIL1P
 Text GLabel 6100 1350 2    50   Input ~ 0
-COIL1N
+MOY_1
 Wire Wire Line
 	4750 1450 4700 1450
 Wire Wire Line
 	4750 1450 4750 1500
 Text GLabel 6100 1450 2    50   Input ~ 0
-COIL2P
+MOY_2
 Text GLabel 6100 1550 2    50   Input ~ 0
-COIL2N
-Text GLabel 6100 1650 2    50   Input ~ 0
-COIL3P
+MOZ_1
 Text GLabel 6100 1750 2    50   Input ~ 0
-COIL3N
+MOX_2
 Text GLabel 5300 5900 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
@@ -1672,11 +1670,19 @@ BATT_P
 Text GLabel 9400 700  0    50   Input ~ 0
 BATT_P
 Text GLabel 6900 1450 0    50   Input ~ 0
-3V3
++3V3
 Text GLabel 8150 1400 2    50   Input ~ 0
 +3V3
 Text GLabel 8800 1400 0    50   Input ~ 0
-3V3
++3V3
 Text GLabel 10050 1350 2    50   Input ~ 0
 +3V3
+Text GLabel 6100 1850 2    50   Input ~ 0
+MOX_1
+NoConn ~ 8800 2100
+NoConn ~ 8800 2200
+NoConn ~ 10000 2000
+NoConn ~ 10000 2100
+Text GLabel 6100 1650 2    50   Input ~ 0
+MOZ_2
 $EndSCHEMATC
