@@ -900,102 +900,6 @@ F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Conne
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 5DAAE797
-P 9850 6650
-F 0 "H4" H 9950 6696 50  0000 L CNN
-F 1 "MountingHole" H 9950 6605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9850 6650 50  0001 C CNN
-F 3 "~" H 9850 6650 50  0001 C CNN
-	1    9850 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5DAAFFA0
-P 9850 6450
-F 0 "H3" H 9950 6496 50  0000 L CNN
-F 1 "MountingHole" H 9950 6405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9850 6450 50  0001 C CNN
-F 3 "~" H 9850 6450 50  0001 C CNN
-	1    9850 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DAB18C3
-P 8800 6450
-F 0 "H1" H 8700 6404 50  0000 R CNN
-F 1 "MountingHole" H 8700 6495 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 6450 50  0001 C CNN
-F 3 "~" H 8800 6450 50  0001 C CNN
-	1    8800 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5DAB1C8C
-P 8800 6650
-F 0 "H2" H 8700 6604 50  0000 R CNN
-F 1 "MountingHole" H 8700 6695 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 6650 50  0001 C CNN
-F 3 "~" H 8800 6650 50  0001 C CNN
-	1    8800 6650
-	-1   0    0    1   
-$EndComp
-$Comp
-L mainboard-rescue:ANTENNA_U.FL- X2
-U 1 1 5DAC9815
-P 10100 3900
-F 0 "X2" H 10150 3437 42  0000 C CNN
-F 1 "ANTENNA_U.FL" H 10150 3516 42  0000 C CNN
-F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 10100 3900 50  0001 C CNN
-F 3 "" H 10100 3900 50  0001 C CNN
-	1    10100 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L mainboard-rescue:ANTENNA_U.FL- X1
-U 1 1 5DACA8A6
-P 9100 5250
-F 0 "X1" H 9150 4787 42  0000 C CNN
-F 1 "ANTENNA_U.FL" H 9150 4866 42  0000 C CNN
-F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 9100 5250 50  0001 C CNN
-F 3 "" H 9100 5250 50  0001 C CNN
-	1    9100 5250
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5DACFA75
-P 10350 3750
-F 0 "#PWR01" H 10350 3500 50  0001 C CNN
-F 1 "GND" H 10355 3577 50  0000 C CNN
-F 2 "" H 10350 3750 50  0001 C CNN
-F 3 "" H 10350 3750 50  0001 C CNN
-	1    10350 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 3750 10200 3750
-Wire Wire Line
-	10200 3750 10200 3700
-Connection ~ 10200 3700
-Wire Wire Line
-	10200 3700 10200 3600
-Wire Wire Line
-	8900 5250 8900 5150
-Wire Wire Line
-	8900 5150 8850 5150
-Wire Wire Line
-	9200 5050 9200 4950
-Wire Wire Line
-	9200 4800 9300 4800
-Connection ~ 9200 4950
-Wire Wire Line
-	9200 4950 9200 4800
-Connection ~ 9300 4800
-$Comp
 L mainboard-rescue:MAX708RESA-T-symbols U6
 U 1 1 5DAB91F7
 P 4800 1150
@@ -1687,4 +1591,85 @@ Text GLabel 8800 1400 0    50   Input ~ 0
 3V3
 Text GLabel 10050 1350 2    50   Input ~ 0
 3V3
+$Comp
+L mainboard-rescue:C_Small-Device C15
+U 1 1 5DB6EC0C
+P 600 6850
+F 0 "C15" H 500 6950 50  0000 L CNN
+F 1 "0.1uF" H 350 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 600 6850 50  0001 C CNN
+F 3 "~" H 600 6850 50  0001 C CNN
+	1    600  6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  6750 750  6750
+Connection ~ 750  6750
+Wire Wire Line
+	750  6950 600  6950
+Connection ~ 750  6950
+$Comp
+L symbols:U.FL-R-SMT-1 J?
+U 1 1 5DBA79E5
+P 9450 5150
+F 0 "J?" H 9850 5415 50  0000 C CNN
+F 1 "U.FL-R-SMT-1" H 9850 5324 50  0000 C CNN
+F 2 "custom-footprints:U.FL-R-SMT-1" H 10100 5250 50  0001 L CNN
+F 3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" H 10100 5150 50  0001 L CNN
+F 4 "" H 10100 5050 50  0001 L CNN "Description"
+F 5 "" H 10100 4950 50  0001 L CNN "Height"
+F 6 "Hirose" H 10100 4850 50  0001 L CNN "Manufacturer_Name"
+F 7 "U.FL-R-SMT-1" H 10100 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10100 4650 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 10100 4550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10100 4450 50  0001 L CNN "RS Part Number"
+F 11 "" H 10100 4350 50  0001 L CNN "RS Price/Stock"
+	1    9450 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5150 8850 5150
+$Comp
+L symbols:U.FL-R-SMT-1 J?
+U 1 1 5DBBD914
+P 10400 3900
+F 0 "J?" H 10800 4165 50  0000 C CNN
+F 1 "U.FL-R-SMT-1" H 10800 4074 50  0000 C CNN
+F 2 "custom-footprints:U.FL-R-SMT-1" H 11050 4000 50  0001 L CNN
+F 3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" H 11050 3900 50  0001 L CNN
+F 4 "" H 11050 3800 50  0001 L CNN "Description"
+F 5 "" H 11050 3700 50  0001 L CNN "Height"
+F 6 "Hirose" H 11050 3600 50  0001 L CNN "Manufacturer_Name"
+F 7 "U.FL-R-SMT-1" H 11050 3500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 11050 3400 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 11050 3300 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 11050 3200 50  0001 L CNN "RS Part Number"
+F 11 "" H 11050 3100 50  0001 L CNN "RS Price/Stock"
+	1    10400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3900 9900 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5DBC73C0
+P 9550 5450
+F 0 "#PWR?" H 9550 5200 50  0001 C CNN
+F 1 "GND" H 9555 5277 50  0000 C CNN
+F 2 "" H 9550 5450 50  0001 C CNN
+F 3 "" H 9550 5450 50  0001 C CNN
+	1    9550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DBC75A7
+P 10500 4200
+F 0 "#PWR?" H 10500 3950 50  0001 C CNN
+F 1 "GND" H 10505 4027 50  0000 C CNN
+F 2 "" H 10500 4200 50  0001 C CNN
+F 3 "" H 10500 4200 50  0001 C CNN
+	1    10500 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
