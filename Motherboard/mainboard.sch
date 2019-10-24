@@ -1226,8 +1226,6 @@ F 3 "" H 7500 2550 50  0001 C CNN
 	1    7500 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 1450 0    50   Input ~ 0
-VINT_1
 Text GLabel 6900 1550 0    50   Input ~ 0
 DXZ_FAULT
 Text GLabel 6900 1650 0    50   Input ~ 0
@@ -1358,8 +1356,6 @@ F 3 "" H 9400 2500 50  0001 C CNN
 	1    9400 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8800 1400 0    50   Input ~ 0
-VINT_1
 Text GLabel 8800 1500 0    50   Input ~ 0
 DXZ_FAULT
 Text GLabel 8800 1600 0    50   Input ~ 0
@@ -1679,4 +1675,16 @@ Text GLabel 5050 2950 0    50   Input ~ 0
 BATT_P
 Text GLabel 1450 6000 0    59   BiDi ~ 0
 WDT_WDI
+Text GLabel 7500 750  0    50   Input ~ 0
+BATT_P
+Text GLabel 9400 700  0    50   Input ~ 0
+BATT_P
+Text GLabel 6900 1450 0    50   Input ~ 0
+3V3
+Text GLabel 8150 1400 2    50   Input ~ 0
+3V3
+Text GLabel 8800 1400 0    50   Input ~ 0
+3V3
+Text GLabel 10050 1350 2    50   Input ~ 0
+3V3
 $EndSCHEMATC

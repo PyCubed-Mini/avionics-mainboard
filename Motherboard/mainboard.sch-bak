@@ -1515,7 +1515,7 @@ Text GLabel 5200 1650 0    50   Input ~ 0
 BURN1
 Text GLabel 5200 1750 0    50   Input ~ 0
 BURN2
-Text GLabel 6100 1250 2    50   Input ~ 0
+Text GLabel 5200 1350 0    50   Input ~ 0
 COIL1P
 Text GLabel 6100 1350 2    50   Input ~ 0
 COIL1N
@@ -1555,7 +1555,7 @@ Text GLabel 5200 1950 0    59   BiDi ~ 0
 SCL1
 Text GLabel 5200 1250 0    59   BiDi ~ 0
 SCL2
-Text GLabel 5200 1350 0    59   BiDi ~ 0
+Text GLabel 6100 1250 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
 	4550 6200 4450 6200
