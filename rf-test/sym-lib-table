@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name spriteSAMD-eagle-import)(type Legacy)(uri ${KIPRJMOD}/spriteSAMD-eagle-import.lib)(options "")(descr ""))
+  (lib (name spriteSAMD-rescue)(type Legacy)(uri ${KIPRJMOD}/spriteSAMD-rescue.lib)(options "")(descr ""))
+  (lib (name sprintSAMD-cache)(type Legacy)(uri ${KIPRJMOD}/spriteSAMD-cache.lib)(options "")(descr ""))
+)
