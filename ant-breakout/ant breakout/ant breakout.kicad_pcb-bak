@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 4)
     (tracks 14)
     (zones 0)
     (modules 3)
@@ -187,6 +187,11 @@
     (pad 2 smd rect (at -0.975 0.4 90) (size 0.75 0.4) (layers F.Cu F.Paste F.Mask)
       (net 4 GND))
   )
+
+  (gr_line (start 105.23 77.42) (end 105.22 101.04) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 132.98 77.41) (end 105.23 77.42) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 132.97 101.05) (end 132.98 77.41) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 105.22 101.04) (end 132.97 101.05) (layer Edge.Cuts) (width 0.05))
 
   (segment (start 118.11 96.324233) (end 118.11 99.06) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 118.11 93.98) (end 118.11 96.324233) (width 0.25) (layer F.Cu) (net 1))
