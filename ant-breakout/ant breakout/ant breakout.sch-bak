@@ -72,10 +72,10 @@ F 3 " ~" H 4650 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_2Pole TP?
+L Connector:TestPoint_2Pole TP1
 U 1 1 5DCD309B
 P 6800 3750
-F 0 "TP?" V 6754 3808 50  0000 L CNN
+F 0 "TP1" V 6754 3808 50  0000 L CNN
 F 1 "TestPoint_2Pole" V 6845 3808 50  0000 L CNN
 F 2 "Documents:exposed pad" H 6800 3750 50  0001 C CNN
 F 3 "~" H 6800 3750 50  0001 C CNN
