@@ -4,7 +4,7 @@
 import RPi.GPIO as GPIO
 import time
 
-P_MOTA1 = 18
+P_MOTA1 = 23
 P_MOTA2 = 22
 
 def forward():
