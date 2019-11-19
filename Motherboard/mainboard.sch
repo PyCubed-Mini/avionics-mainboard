@@ -1609,7 +1609,7 @@ Wire Wire Line
 	750  6950 600  6950
 Connection ~ 750  6950
 $Comp
-L symbols:U.FL-R-SMT-1 J?
+L mainboard-rescue:U.FL-R-SMT-1-symbols J?
 U 1 1 5DBA79E5
 P 9450 5150
 F 0 "J?" H 9850 5415 50  0000 C CNN
@@ -1630,7 +1630,7 @@ $EndComp
 Wire Wire Line
 	9050 5150 8850 5150
 $Comp
-L symbols:U.FL-R-SMT-1 J?
+L mainboard-rescue:U.FL-R-SMT-1-symbols J?
 U 1 1 5DBBD914
 P 10400 3900
 F 0 "J?" H 10800 4165 50  0000 C CNN
