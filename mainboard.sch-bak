@@ -900,45 +900,16 @@ F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Conne
 	1    0    0    -1  
 $EndComp
 $Comp
-L mainboard-rescue:ANTENNA_U.FL- X2
-U 1 1 5DAC9815
-P 10100 3900
-F 0 "X2" H 10150 3437 42  0000 C CNN
-F 1 "ANTENNA_U.FL" H 10150 3516 42  0000 C CNN
-F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 10100 3900 50  0001 C CNN
-F 3 "" H 10100 3900 50  0001 C CNN
-	1    10100 3900
-	-1   0    0    1   
-$EndComp
-$Comp
 L mainboard-rescue:ANTENNA_U.FL- X1
 U 1 1 5DACA8A6
 P 9100 5250
 F 0 "X1" H 9150 4787 42  0000 C CNN
 F 1 "ANTENNA_U.FL" H 9150 4866 42  0000 C CNN
-F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 9100 5250 50  0001 C CNN
+F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 9100 5250 50  0001 C CNN
 F 3 "" H 9100 5250 50  0001 C CNN
 	1    9100 5250
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5DACFA75
-P 10350 3750
-F 0 "#PWR01" H 10350 3500 50  0001 C CNN
-F 1 "GND" H 10355 3577 50  0000 C CNN
-F 2 "" H 10350 3750 50  0001 C CNN
-F 3 "" H 10350 3750 50  0001 C CNN
-	1    10350 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 3750 10200 3750
-Wire Wire Line
-	10200 3750 10200 3700
-Connection ~ 10200 3700
-Wire Wire Line
-	10200 3700 10200 3600
 Wire Wire Line
 	8900 5250 8900 5150
 Wire Wire Line
@@ -1641,4 +1612,33 @@ NoConn ~ 10000 2000
 NoConn ~ 10000 2100
 Text GLabel 6100 1650 2    50   Input ~ 0
 MOZ_2
+$Comp
+L mainboard-cache:mainboard-rescue_ANTENNA_U.FL- X2
+U 1 1 5DF0AD82
+P 10100 3900
+F 0 "X2" H 10150 3437 42  0000 C CNN
+F 1 "ANTENNA_U.FL" H 10150 3516 42  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 10100 3900 50  0001 C CNN
+F 3 "" H 10100 3900 50  0001 C CNN
+	1    10100 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10200 3600 10200 3700
+$Comp
+L power:GND #PWR0136
+U 1 1 5DF14AF0
+P 10250 3750
+F 0 "#PWR0136" H 10250 3500 50  0001 C CNN
+F 1 "GND" H 10255 3577 50  0000 C CNN
+F 2 "" H 10250 3750 50  0001 C CNN
+F 3 "" H 10250 3750 50  0001 C CNN
+	1    10250 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 3700 10200 3750
+Wire Wire Line
+	10200 3750 10250 3750
+Connection ~ 10200 3700
 $EndSCHEMATC

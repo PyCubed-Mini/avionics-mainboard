@@ -34,6 +34,23 @@ X SHIELD 9 800 -600 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# mainboard-cache_mainboard-rescue_ANTENNA_U.FL-
+#
+DEF mainboard-cache_mainboard-rescue_ANTENNA_U.FL- X 0 40 Y Y 1 L N
+F0 "X" -100 130 42 H V L BNN
+F1 "mainboard-cache_mainboard-rescue_ANTENNA_U.FL-" -100 -400 42 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 44 1 0 10 N
+C 0 0 100 1 0 10 N
+P 2 1 0 0 0 -100 0 -300 N
+X GND@0 1 -100 -200 100 R 0 0 1 0 P
+X GND@1 2 -100 -300 100 R 0 0 1 0 P
+X SIGNAL 3 200 0 200 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
 # mainboard-rescue_10118194-0001LF-10118194-0001LF
 #
 DEF mainboard-rescue_10118194-0001LF-10118194-0001LF J 0 40 Y Y 1 L N
