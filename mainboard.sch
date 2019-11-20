@@ -900,50 +900,6 @@ F 4 "Omron XF2M Series 0.5mm Pitch 24 Way 1 Row Right Angle SMT Female FPC Conne
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H4
-U 1 1 5DAAE797
-P 9850 6650
-F 0 "H4" H 9950 6696 50  0000 L CNN
-F 1 "MountingHole" H 9950 6605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9850 6650 50  0001 C CNN
-F 3 "~" H 9850 6650 50  0001 C CNN
-	1    9850 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5DAAFFA0
-P 9850 6450
-F 0 "H3" H 9950 6496 50  0000 L CNN
-F 1 "MountingHole" H 9950 6405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9850 6450 50  0001 C CNN
-F 3 "~" H 9850 6450 50  0001 C CNN
-	1    9850 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DAB18C3
-P 8800 6450
-F 0 "H1" H 8700 6404 50  0000 R CNN
-F 1 "MountingHole" H 8700 6495 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 6450 50  0001 C CNN
-F 3 "~" H 8800 6450 50  0001 C CNN
-	1    8800 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5DAB1C8C
-P 8800 6650
-F 0 "H2" H 8700 6604 50  0000 R CNN
-F 1 "MountingHole" H 8700 6695 50  0000 R CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8800 6650 50  0001 C CNN
-F 3 "~" H 8800 6650 50  0001 C CNN
-	1    8800 6650
-	-1   0    0    1   
-$EndComp
-$Comp
 L mainboard-rescue:ANTENNA_U.FL- X2
 U 1 1 5DAC9815
 P 10100 3900
