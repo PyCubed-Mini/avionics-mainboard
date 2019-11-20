@@ -1,0 +1,32 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TPS82740ASIPT
+#/624072/185185/2.44/9/4/Integrated Circuit
+DEF TPS82740ASIPT IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "TPS82740ASIPT" 1050 200 50 H V L CNN
+F2 "BGA9C80P3X3_290X230X110" 1050 100 50 H I L CNN
+F3 "http://www.ti.com/lit/gpn/tps82740a" 1050 0 50 H I L CNN
+F4 "200-mA Step Down Converter MicroSiP Module with 360nA quiescent current" 1050 -100 50 H I L CNN "Description"
+F5 "1.1" 1050 -200 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TPS82740ASIPT" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-TPS82740ASIPT" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TPS82740ASIPT" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1050 -700 50 H I L CNN "RS Part Number"
+F11 "" 1050 -800 50 H I L CNN "RS Price/Stock"
+DRAW
+X VSEL3 A1 0 0 200 R 50 50 0 0 B
+X VSEL2 A2 0 -100 200 R 50 50 0 0 B
+X VSEL1 A3 0 -200 200 R 50 50 0 0 B
+X LOAD B1 0 -300 200 R 50 50 0 0 B
+X CTRL B2 0 -400 200 R 50 50 0 0 B
+X EN B3 1200 0 200 L 50 50 0 0 B
+X VOUT C1 1200 -100 200 L 50 50 0 0 B
+X GND C2 1200 -200 200 L 50 50 0 0 B
+X VIN C3 1200 -300 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 1000 100 1000 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
