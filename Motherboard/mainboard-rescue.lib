@@ -439,23 +439,6 @@ X VIN C3 -600 400 200 R 50 50 1 0 U
 ENDDRAW
 ENDDEF
 #
-# U.FL-R-SMT-1-symbols
-#
-DEF U.FL-R-SMT-1-symbols J 0 30 Y Y 1 F N
-F0 "J" -300 450 50 H V L CNN
-F1 "U.FL-R-SMT-1-symbols" -300 350 50 H V L CNN
-F2 "U.FL-R-SMT-1" -300 250 50 H I L CNN
-F3 "https://www.hirose.co.jp/cataloge_hp/ed_UFL_20141014.pdf" -300 150 50 H I L CNN
-F4 "Hirose" -300 -150 50 H I L CNN "Manufacturer_Name"
-F5 "U.FL-R-SMT-1" -300 -250 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 5 0 1 6 -200 100 200 100 200 -100 -200 -100 -200 100 N
-X GND 1 100 -300 200 U 50 50 0 0 U
-X 2 2 100 -300 200 U 50 50 0 0 U N
-X ANT 3 -400 0 200 R 50 50 0 0 U
-ENDDRAW
-ENDDEF
-#
 # VUSB-power-
 #
 DEF VUSB-power- #PWR 0 0 Y Y 1 F P
