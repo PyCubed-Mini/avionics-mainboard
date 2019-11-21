@@ -1420,11 +1420,11 @@ Text GLabel 5300 5800 2    59   BiDi ~ 0
 SCL2
 Text GLabel 6100 2250 2    50   Input ~ 0
 3V3
-Text GLabel 5200 2250 0    50   Input ~ 0
+Text GLabel 5200 1250 0    50   Input ~ 0
 GND
-Text GLabel 6100 2350 2    50   Input ~ 0
+Text GLabel 5200 1550 0    50   Input ~ 0
 BATT_P
-Text GLabel 5200 2350 0    50   Input ~ 0
+Text GLabel 6100 1550 2    50   Input ~ 0
 BATT_N
 Text GLabel 5200 1650 0    50   Input ~ 0
 BURN1
@@ -1438,11 +1438,11 @@ Wire Wire Line
 	4750 1450 4700 1450
 Wire Wire Line
 	4750 1450 4750 1500
-Text GLabel 6100 1450 2    50   Input ~ 0
+Text GLabel 5200 1450 0    50   Input ~ 0
 MOY_2
-Text GLabel 6100 1550 2    50   Input ~ 0
-MOZ_1
 Text GLabel 6100 1750 2    50   Input ~ 0
+MOZ_1
+Text GLabel 6100 1850 2    50   Input ~ 0
 MOX_2
 Text GLabel 5300 5900 2    59   BiDi ~ 0
 SDA2
@@ -1462,13 +1462,13 @@ Text Notes 2100 7650 0    50   ~ 0
 SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
 Text Notes 2600 7900 0    50   ~ 0
 I2C_1\nSCL: PA01\nSDA: PA00\n\nI2C_2\nSCL: PA16\nSDA: PA17\n
-Text GLabel 6100 1950 2    59   BiDi ~ 0
+Text GLabel 5200 2150 0    59   BiDi ~ 0
 SDA1
-Text GLabel 5200 1950 0    59   BiDi ~ 0
+Text GLabel 5200 2350 0    59   BiDi ~ 0
 SCL1
-Text GLabel 5200 1250 0    59   BiDi ~ 0
+Text GLabel 6100 2350 2    59   BiDi ~ 0
 SCL2
-Text GLabel 6100 1250 2    59   BiDi ~ 0
+Text GLabel 6100 2150 2    59   BiDi ~ 0
 SDA2
 Wire Wire Line
 	4550 6200 4450 6200
@@ -1604,13 +1604,13 @@ Text GLabel 8800 1400 0    50   Input ~ 0
 +3V3
 Text GLabel 10050 1350 2    50   Input ~ 0
 +3V3
-Text GLabel 6100 1850 2    50   Input ~ 0
+Text GLabel 5200 1950 0    50   Input ~ 0
 MOX_1
 NoConn ~ 8800 2100
 NoConn ~ 8800 2200
 NoConn ~ 10000 2000
 NoConn ~ 10000 2100
-Text GLabel 6100 1650 2    50   Input ~ 0
+Text GLabel 5200 1850 0    50   Input ~ 0
 MOZ_2
 $Comp
 L mainboard-cache:mainboard-rescue_ANTENNA_U.FL- X2
