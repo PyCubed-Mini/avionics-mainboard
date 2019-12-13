@@ -6,4 +6,4 @@ Snapshot: 2019-10-22 maholli
   <img width="600" src="https://github.com/spacecraft-design-lab-2019/avionics-motherboard/blob/master/Motherboard/mainboard.svg">
 </p>
 
-[Motherboard block diagram draw.io](https://drive.google.com/open?id=1g6cBA9ty5UXuTctHxNM6maBXaPy8QjEr)
+[Motherboard block diagram draw.io](https://drive.google.com/file/d/1i8R7Gf3Xthh23wCwzEqk22y6YbL8fg8w/view?usp=sharing)
