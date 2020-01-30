@@ -1,0 +1,23 @@
+### Module positions - created on 12/31/2019 1:44:42 PM ###
+### Printed by Pcbnew version pcbnew (5.1.4)-1
+## Unit = mm, Angle = deg.
+## Side : bottom
+# Ref     Val            Package                                  PosX       PosY       Rot  Side
+C1        0.1uF          C_0402_1005Metric                    -98.1075   -99.9490   90.0000  bottom
+C2        10uF           C_0402_1005Metric                    -96.9010   -99.9490   90.0000  bottom
+C3        1uF            C_0402_1005Metric                    -97.0915   -94.1705  270.0000  bottom
+C5        1uF            C_0402_1005Metric                    -95.6945   -99.9490   90.0000  bottom
+C7        10uF           C_0402_1005Metric                    -99.6950   -97.3455  180.0000  bottom
+C15       0.1uF          C_0402_1005Metric                    -94.3610   -99.9515   90.0000  bottom
+C16       0.1uF          C_0402_1005Metric                    -88.8365   -98.4250  180.0000  bottom
+D3        WS2812B        LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm   -81.4705  -102.6160    0.0000  bottom
+J3        Micro_SD_Card  503182-1853_MOLEX-MicroSD           -109.9820   -99.3140   90.0000  bottom
+J4        xf2m-2415-1a   XF2M-2415-1A                         -83.7108   -85.0113   90.0000  bottom
+J6        U.FL-R-SMT-1   U.FL-R-SMT-1                        -100.3808   -89.4842  270.0000  bottom
+L1        10uH           L_0805_2012Metric                    -96.1390  -102.3620  180.0000  bottom
+R3        10K            R_0402_1005Metric                    -86.5505  -104.9655  270.0000  bottom
+U3        DRV8848        SOP65P640X120-17N                    -89.9287   -82.4484    0.0000  bottom
+U5        DRV8848        SOP65P640X120-17N                    -89.8779   -88.4428    0.0000  bottom
+U6        MAX708RESA-T   SO-8_3.9x4.9mm_P1.27mm               -89.9160  -102.8700  270.0000  bottom
+U8        RFM95W-915S2   HOPERF_RFM9XW_SMD                   -111.7600   -83.5660  180.0000  bottom
+## End
