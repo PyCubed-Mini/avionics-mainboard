@@ -321,17 +321,6 @@ F 11 "" H 2250 950 50  0001 L CNN "RS Price/Stock"
 	1    0    0    -1  
 $EndComp
 $Comp
-L mainboard-rescue:Micro_SD_Card-Connector J3
-U 1 1 5DAD21D3
-P 4600 2000
-F 0 "J3" H 4550 2717 50  0000 C CNN
-F 1 "Micro_SD_Card" H 4550 2626 50  0000 C CNN
-F 2 "custom-footprints:503182-1853_MOLEX-MicroSD" H 5750 2300 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 4600 2000 50  0001 C CNN
-	1    4600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5DAE058A
 P 650 2350
@@ -385,66 +374,6 @@ Connection ~ 1200 2350
 Connection ~ 650  2350
 Wire Wire Line
 	650  2350 650  1950
-Text GLabel 3600 1900 0    59   Output ~ 0
-MOSI
-Text GLabel 3600 2100 0    59   Output ~ 0
-SCK
-Wire Wire Line
-	3600 1900 3700 1900
-Wire Wire Line
-	3600 2100 3700 2100
-Text GLabel 3600 2300 0    59   Input ~ 0
-MISO
-Wire Wire Line
-	3600 2300 3700 2300
-Wire Wire Line
-	3700 1800 3600 1800
-Text GLabel 3550 1800 0    50   Input ~ 0
-CS_SD
-$Comp
-L power:+3V3 #PWR0107
-U 1 1 5DB4CFA0
-P 3100 1800
-F 0 "#PWR0107" H 3100 1650 50  0001 C CNN
-F 1 "+3V3" H 3115 1973 50  0000 C CNN
-F 2 "" H 3100 1800 50  0001 C CNN
-F 3 "" H 3100 1800 50  0001 C CNN
-	1    3100 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 1800 3100 2000
-Wire Wire Line
-	3100 2000 3700 2000
-Wire Wire Line
-	3700 2200 3100 2200
-Wire Wire Line
-	3100 2200 3100 2350
-$Comp
-L power:GND #PWR0111
-U 1 1 5DB59650
-P 3100 2350
-F 0 "#PWR0111" H 3100 2100 50  0001 C CNN
-F 1 "GND" H 3105 2177 50  0000 C CNN
-F 2 "" H 3100 2350 50  0001 C CNN
-F 3 "" H 3100 2350 50  0001 C CNN
-	1    3100 2350
-	1    0    0    -1  
-$EndComp
-NoConn ~ 3700 2400
-$Comp
-L power:GND #PWR0112
-U 1 1 5DB658B5
-P 5400 2700
-F 0 "#PWR0112" H 5400 2450 50  0001 C CNN
-F 1 "GND" H 5405 2527 50  0000 C CNN
-F 2 "" H 5400 2700 50  0001 C CNN
-F 3 "" H 5400 2700 50  0001 C CNN
-	1    5400 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 2600 5400 2700
 $Comp
 L mainboard-rescue:MAX708RESA-T-symbols U6
 U 1 1 5DAB91F7
@@ -599,63 +528,42 @@ Wire Wire Line
 	3050 4250 3000 4250
 Wire Wire Line
 	3050 4250 3050 4300
-Wire Wire Line
-	4550 8300 4350 8300
-Text GLabel 4550 8200 2    59   BiDi ~ 0
+Text GLabel 4700 8200 2    59   BiDi ~ 0
 SDA1
-Text GLabel 4550 8300 2    59   BiDi ~ 0
+Text GLabel 4700 8300 2    59   BiDi ~ 0
 SCL1
-Text Notes 2050 11250 0    50   ~ 0
-UART:\nTX: PB08\nRX: PB09\n
-Text Notes 2500 11350 0    50   ~ 0
-SPI\nSCK: PA09\nMOSI: PA08\nMISO: PA10\n
 Text GLabel 7550 9150 0    59   BiDi ~ 0
 SDA1
 $Comp
-L mainboard-rescue:R_US-Device R4
-U 1 1 5DB0C8A9
-P 4350 8150
-F 0 "R4" H 4450 7950 50  0000 C CNN
-F 1 "10K" H 4450 8050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4390 8140 50  0001 C CNN
-F 3 "~" H 4350 8150 50  0001 C CNN
-	1    4350 8150
-	-1   0    0    1   
-$EndComp
-Connection ~ 4350 8300
-$Comp
 L mainboard-rescue:R_US-Device R6
 U 1 1 5DB0D4A3
-P 4500 8050
-F 0 "R6" H 4400 8000 50  0000 C CNN
-F 1 "10K" H 4400 8100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4540 8040 50  0001 C CNN
-F 3 "~" H 4500 8050 50  0001 C CNN
-	1    4500 8050
+P 4650 8050
+F 0 "R6" H 4550 8000 50  0000 C CNN
+F 1 "10K" H 4550 8100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4690 8040 50  0001 C CNN
+F 3 "~" H 4650 8050 50  0001 C CNN
+	1    4650 8050
 	-1   0    0    1   
 $EndComp
-Connection ~ 4500 8200
+Connection ~ 4650 8200
 Wire Wire Line
-	4500 8200 4550 8200
+	4650 8200 4700 8200
 $Comp
 L power:+3V3 #PWR0134
 U 1 1 5DB0E5CD
-P 4500 7800
-F 0 "#PWR0134" H 4500 7650 50  0001 C CNN
-F 1 "+3V3" H 4515 7973 50  0000 C CNN
-F 2 "" H 4500 7800 50  0001 C CNN
-F 3 "" H 4500 7800 50  0001 C CNN
-	1    4500 7800
+P 4650 7800
+F 0 "#PWR0134" H 4650 7650 50  0001 C CNN
+F 1 "+3V3" H 4665 7973 50  0000 C CNN
+F 2 "" H 4650 7800 50  0001 C CNN
+F 3 "" H 4650 7800 50  0001 C CNN
+	1    4650 7800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 7800 4500 7900
+	4650 7800 4650 7900
 Wire Wire Line
-	4350 8000 4350 7900
-Wire Wire Line
-	4350 7900 4500 7900
-Connection ~ 4500 7900
-NoConn ~ 3700 1700
+	4500 7900 4650 7900
+Connection ~ 4650 7900
 $Comp
 L mainboard-rescue:R_US-Device R7
 U 1 1 5DB33981
@@ -771,15 +679,13 @@ Wire Wire Line
 Wire Wire Line
 	3150 4250 3050 4250
 Connection ~ 3050 4250
-Text GLabel 2350 9500 0    50   Input ~ 0
-CS_SD
 Text GLabel 1350 7200 0    50   Input ~ 0
 BATT_P
-Text GLabel 4900 9300 2    50   BiDi ~ 0
+Text GLabel 3950 7100 2    50   BiDi ~ 0
 M_FAULT
-Text GLabel 3950 9000 2    50   Output ~ 0
+Text GLabel 3850 8800 2    50   Output ~ 0
 BURN1
-Text GLabel 3950 9100 2    50   Output ~ 0
+Text GLabel 3850 8900 2    50   Output ~ 0
 BURN2
 Text GLabel 2400 2350 2    59   BiDi ~ 0
 SDA1
@@ -1082,31 +988,6 @@ F 3 "" H 7550 7200 50  0001 C CNN
 	1    7550 7200
 	1    0    0    -1  
 $EndComp
-$Comp
-L mainboard-rescue:R_US-Device R15
-U 1 1 5DEA6768
-P 3600 1650
-F 0 "R15" H 3700 1700 50  0000 C CNN
-F 1 "10K" H 3700 1600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3640 1640 50  0001 C CNN
-F 3 "~" H 3600 1650 50  0001 C CNN
-	1    3600 1650
-	-1   0    0    1   
-$EndComp
-Connection ~ 3600 1800
-Wire Wire Line
-	3600 1800 3550 1800
-$Comp
-L power:+3V3 #PWR0153
-U 1 1 5DEB0CA1
-P 3600 1500
-F 0 "#PWR0153" H 3600 1350 50  0001 C CNN
-F 1 "+3V3" H 3615 1673 50  0000 C CNN
-F 2 "" H 3600 1500 50  0001 C CNN
-F 3 "" H 3600 1500 50  0001 C CNN
-	1    3600 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7550 6850 7550 7200
 Text GLabel 1700 8600 0    59   BiDi ~ 0
@@ -1200,8 +1081,6 @@ Wire Wire Line
 	2450 7500 1500 7500
 Text Label 2050 7500 2    50   ~ 0
 BATTERY
-Text Notes 3800 1050 0    197  ~ 0
-SD CARD
 $Comp
 L Mechanical:Fiducial FID2
 U 1 1 5DF67A88
@@ -1619,66 +1498,66 @@ Wire Wire Line
 	10500 1250 10400 1250
 Wire Wire Line
 	10500 1350 10400 1350
-Text GLabel 4150 7000 2    50   Input ~ 0
+Text GLabel 4800 9000 2    50   Input ~ 0
 SCL3
-Text GLabel 4150 7100 2    50   Input ~ 0
+Text GLabel 4800 9100 2    50   Input ~ 0
 SDA3
 $Comp
 L mainboard-rescue:R_US-Device R14
 U 1 1 5E57D0AA
-P 6550 7600
-F 0 "R14" H 6400 7550 50  0000 C CNN
-F 1 "10K" H 6400 7650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6590 7590 50  0001 C CNN
-F 3 "~" H 6550 7600 50  0001 C CNN
-	1    6550 7600
+P 5300 6700
+F 0 "R14" H 5150 6650 50  0000 C CNN
+F 1 "10K" H 5150 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5340 6690 50  0001 C CNN
+F 3 "~" H 5300 6700 50  0001 C CNN
+	1    5300 6700
 	-1   0    0    1   
 $EndComp
 $Comp
 L mainboard-rescue:R_US-Device R13
 U 1 1 5E57D451
-P 6200 7600
-F 0 "R13" H 6050 7550 50  0000 C CNN
-F 1 "10K" H 6050 7650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6240 7590 50  0001 C CNN
-F 3 "~" H 6200 7600 50  0001 C CNN
-	1    6200 7600
+P 4950 6700
+F 0 "R13" H 4800 6650 50  0000 C CNN
+F 1 "10K" H 4800 6750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4990 6690 50  0001 C CNN
+F 3 "~" H 4950 6700 50  0001 C CNN
+	1    4950 6700
 	-1   0    0    1   
 $EndComp
-Text GLabel 6200 7800 3    50   Input ~ 0
+Text GLabel 4950 6900 3    50   Input ~ 0
 SCL3
-Text GLabel 6550 7800 3    50   Input ~ 0
+Text GLabel 5300 6900 3    50   Input ~ 0
 SDA3
 $Comp
 L power:+3V3 #PWR0128
 U 1 1 5E589809
-P 6200 7400
-F 0 "#PWR0128" H 6200 7250 50  0001 C CNN
-F 1 "+3V3" H 6215 7573 50  0000 C CNN
-F 2 "" H 6200 7400 50  0001 C CNN
-F 3 "" H 6200 7400 50  0001 C CNN
-	1    6200 7400
+P 4950 6500
+F 0 "#PWR0128" H 4950 6350 50  0001 C CNN
+F 1 "+3V3" H 4965 6673 50  0000 C CNN
+F 2 "" H 4950 6500 50  0001 C CNN
+F 3 "" H 4950 6500 50  0001 C CNN
+	1    4950 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0129
 U 1 1 5E589890
-P 6550 7400
-F 0 "#PWR0129" H 6550 7250 50  0001 C CNN
-F 1 "+3V3" H 6565 7573 50  0000 C CNN
-F 2 "" H 6550 7400 50  0001 C CNN
-F 3 "" H 6550 7400 50  0001 C CNN
-	1    6550 7400
+P 5300 6500
+F 0 "#PWR0129" H 5300 6350 50  0001 C CNN
+F 1 "+3V3" H 5315 6673 50  0000 C CNN
+F 2 "" H 5300 6500 50  0001 C CNN
+F 3 "" H 5300 6500 50  0001 C CNN
+	1    5300 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 7400 6200 7450
+	4950 6500 4950 6550
 Wire Wire Line
-	6550 7400 6550 7450
+	5300 6500 5300 6550
 Wire Wire Line
-	6550 7750 6550 7800
+	5300 6850 5300 6900
 Wire Wire Line
-	6200 7750 6200 7800
+	4950 6850 4950 6900
 Text GLabel 10400 1250 0    50   Input ~ 0
 SDA3
 Text GLabel 10400 1350 0    50   Input ~ 0
@@ -1798,7 +1677,7 @@ F 3 "" H 9000 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 1250 7750 1250
-Text GLabel 4900 9000 2    50   Input ~ 0
+Text GLabel 3950 7000 2    50   Input ~ 0
 M_EN
 Text GLabel 7750 1250 0    50   Input ~ 0
 M_EN
@@ -2518,8 +2397,6 @@ SWCLK
 Wire Wire Line
 	4850 10100 4750 10100
 Connection ~ 4750 10100
-Wire Wire Line
-	2450 9500 2350 9500
 Connection ~ 7550 7200
 Text Label 1350 9900 0    50   ~ 0
 ~RESET
@@ -2542,12 +2419,152 @@ Wire Wire Line
 Wire Wire Line
 	1800 8300 1800 8200
 Connection ~ 1800 8200
+Text Notes 1400 8450 0    50   ~ 0
+SERCOM1
+Text Notes 4850 8150 0    50   ~ 0
+SERCOM4\n
 Wire Wire Line
-	3850 9100 3950 9100
+	3850 7000 3950 7000
 Wire Wire Line
-	3850 9000 3950 9000
+	3850 7100 3950 7100
+Text GLabel 2450 7700 0    50   Output ~ 0
+FLASH_MOSI
+Text GLabel 2450 7800 0    50   Input ~ 0
+FLASH_MISO
+Text GLabel 2450 7900 0    50   BiDi ~ 0
+FLASH_IO2
+Text GLabel 2450 8000 0    50   BiDi ~ 0
+FLASH_IO3
+Text GLabel 3850 8000 2    50   Output ~ 0
+FLASH_SCK
+Text GLabel 3850 8100 2    50   Output ~ 0
+FLASH_CS
 Wire Wire Line
-	3850 8200 4500 8200
+	4500 7900 4500 8000
 Wire Wire Line
-	3850 8300 4350 8300
+	3850 8200 4650 8200
+Text Notes 1900 7650 0    50   ~ 0
+SERCOM0/2
+Text Notes 4650 9250 0    50   ~ 0
+SERCOM7
+Wire Wire Line
+	3850 9100 4550 9100
+Wire Wire Line
+	3850 9000 4700 9000
+Wire Wire Line
+	3850 8300 4500 8300
+Wire Wire Line
+	4700 8300 4500 8300
+Connection ~ 4500 8300
+$Comp
+L mainboard-rescue:R_US-Device R4
+U 1 1 5DB0C8A9
+P 4500 8150
+F 0 "R4" H 4600 8100 50  0000 C CNN
+F 1 "10K" H 4600 8050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4540 8140 50  0001 C CNN
+F 3 "~" H 4500 8150 50  0001 C CNN
+	1    4500 8150
+	-1   0    0    1   
+$EndComp
+$Comp
+L mainboard-rescue:R_US-Device R?
+U 1 1 5F59D65A
+P 4550 8950
+F 0 "R?" H 4650 8900 50  0000 C CNN
+F 1 "10K" H 4650 8850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4590 8940 50  0001 C CNN
+F 3 "~" H 4550 8950 50  0001 C CNN
+	1    4550 8950
+	-1   0    0    1   
+$EndComp
+Connection ~ 4550 9100
+Wire Wire Line
+	4550 9100 4800 9100
+$Comp
+L mainboard-rescue:R_US-Device R?
+U 1 1 5F59DE3C
+P 4700 8850
+F 0 "R?" H 4800 8800 50  0000 C CNN
+F 1 "10K" H 4800 8750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4740 8840 50  0001 C CNN
+F 3 "~" H 4700 8850 50  0001 C CNN
+	1    4700 8850
+	-1   0    0    1   
+$EndComp
+Connection ~ 4700 9000
+Wire Wire Line
+	4700 9000 4800 9000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F59E868
+P 4700 8700
+F 0 "#PWR?" H 4700 8550 50  0001 C CNN
+F 1 "+3V3" H 4715 8873 50  0000 C CNN
+F 2 "" H 4700 8700 50  0001 C CNN
+F 3 "" H 4700 8700 50  0001 C CNN
+	1    4700 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 8800 4550 8700
+Wire Wire Line
+	4550 8700 4700 8700
+Connection ~ 4700 8700
+$Comp
+L Memory_NVRAM:MR25H40 U?
+U 1 1 5F5B5E9E
+P 6000 7800
+F 0 "U?" H 6000 8381 50  0000 C CNN
+F 1 "MR25H40" H 6000 8290 50  0000 C CNN
+F 2 "" H 6000 7800 50  0001 C CNN
+F 3 "https://www.everspin.com/file/217/download" H 5700 8100 50  0001 C CNN
+	1    6000 7800
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 7900 0    50   Input ~ 0
+FLASH_CS
+Text GLabel 6400 7700 2    50   Input ~ 0
+FLASH_SCK
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F5BBCEF
+P 6000 7400
+F 0 "#PWR?" H 6000 7250 50  0001 C CNN
+F 1 "+3V3" H 6015 7573 50  0000 C CNN
+F 2 "" H 6000 7400 50  0001 C CNN
+F 3 "" H 6000 7400 50  0001 C CNN
+	1    6000 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BC9E4
+P 6000 8200
+F 0 "#PWR?" H 6000 7950 50  0001 C CNN
+F 1 "GND" H 6005 8027 50  0000 C CNN
+F 2 "" H 6000 8200 50  0001 C CNN
+F 3 "" H 6000 8200 50  0001 C CNN
+	1    6000 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5BD27D
+P 5900 8200
+F 0 "#PWR?" H 5900 7950 50  0001 C CNN
+F 1 "GND" H 5905 8027 50  0000 C CNN
+F 2 "" H 5900 8200 50  0001 C CNN
+F 3 "" H 5900 8200 50  0001 C CNN
+	1    5900 8200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 7700 0    50   BiDi ~ 0
+FLASH_IO2
+Text GLabel 5600 7800 0    50   BiDi ~ 0
+FLASH_IO3
+Text GLabel 6400 7800 2    50   Output ~ 0
+FLASH_MISO
+Text GLabel 6400 7900 2    50   Input ~ 0
+FLASH_MOSI
 $EndSCHEMATC
