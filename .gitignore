@@ -2,3 +2,5 @@
 *.bak
 *.kicad_pcb-bak
 *.sch-bak
+
+_autosave-mainboard.sch
