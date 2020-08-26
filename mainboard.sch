@@ -1698,8 +1698,6 @@ F 3 "" H 16100 4700 50  0001 C CNN
 $EndComp
 Text GLabel 14400 5350 0    50   BiDi ~ 0
 RF_IO1
-Text GLabel 15600 4750 2    50   BiDi ~ 0
-RF_IO2
 Wire Wire Line
 	15600 4650 15600 4400
 Text GLabel 15000 4350 1    50   Input ~ 0
@@ -2172,15 +2170,13 @@ F 3 "" H 16100 2000 50  0001 C CNN
 	1    16100 2000
 	0    -1   -1   0   
 $EndComp
-Text Notes 6400 4400 0    100  ~ 0
-TODO\n- verify SERCOM\n- check fit in CAD\n- place fiducals
-Text Notes 7700 4050 0    100  ~ 20
+Text Notes 7750 3750 0    100  ~ 20
 done
 Text GLabel 14400 5250 0    50   BiDi ~ 0
 RF_IO0
 Text GLabel 2450 7400 0    50   BiDi ~ 0
 RF_IO0
-Text Notes 7900 4250 0    100  ~ 20
+Text Notes 7900 3950 0    100  ~ 20
 done
 Wire Wire Line
 	15600 2100 15400 2100
@@ -2195,4 +2191,17 @@ F 3 "~" H 15900 2000 50  0001 C CNN
 	1    15900 2000
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector:Micro_SD_Card J8
+U 1 1 5F583739
+P 14100 6600
+F 0 "J8" H 14050 7317 50  0000 C CNN
+F 1 "Micro_SD_Card" H 14050 7226 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Molex_104031-0811" H 15250 6900 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 14100 6600 50  0001 C CNN
+	1    14100 6600
+	1    0    0    -1  
+$EndComp
+Text Notes 6400 4400 0    100  ~ 0
+TODO\n- verify SERCOM\n- check fit in CAD\n- place fiducals\n- add rbf\n- fit SD maybe?
 $EndSCHEMATC
