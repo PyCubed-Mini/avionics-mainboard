@@ -616,10 +616,10 @@
       (net 1 GND))
     (pad 11 smd rect (at -2.24 5.375 180) (size 1.9 1.35) (layers Top F.Paste F.Mask))
     (pad 11 smd rect (at 3.73 5.375 180) (size 1.9 1.35) (layers Top F.Paste F.Mask))
-    (model ${KISYS3DMOD}/Connector_Card.3dshapes/microSD_HC_Molex_104031-0811.wrl
+    (model ${KISYS3DMOD}/Connector_Card.3dshapes/microSD_HC_Hirose_DM3D-SF.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1138,8 +1138,8 @@
       (net 11 SDA2))
     (pad 1 smd rect (at -5.75 0 50) (size 0.25 1.1) (layers Bottom B.Paste B.Mask)
       (net 13 SCL2))
-    (model ${SPACECRAFT_LIB_DIR}/3d/xf2m-2415-1a.stp
-      (offset (xyz 0 -4.8514 0))
+    (model ${CUSTOM_FOOTPRINT_DIR}/3d/xf2m-2415-1a.stp
+      (offset (xyz 0 -4.826 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
@@ -1681,10 +1681,10 @@
       (net 67 "Net-(J4-Pad10)"))
     (pad 11 smd rect (at -3.9 3.9 270) (size 1.5 1.7) (layers Top F.Paste F.Mask))
     (pad 12 smd rect (at 3.9 3.9 270) (size 1.5 1.7) (layers Top F.Paste F.Mask))
-    (model ${SPACECRAFT_LIB_DIR}/3d/XF2M-1015-1A.stp
-      (offset (xyz 0 -4.8768 -0.0254))
+    (model ${CUSTOM_FOOTPRINT_DIR}/3d/XF2M-1015-1A.stp
+      (offset (xyz 0 -4.8514 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 90 180 180))
+      (rotate (xyz -90 0 0))
     )
   )
 
