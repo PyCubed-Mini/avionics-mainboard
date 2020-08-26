@@ -548,11 +548,9 @@ F 3 "~" H 11700 9750 50  0001 C CNN
 	1    11700 9750
 	1    0    0    -1  
 $EndComp
-Text GLabel 3850 7900 2    50   BiDi ~ 0
-RF_CS
 Text GLabel 2450 7300 0    50   BiDi ~ 0
 RF_IO1
-Text GLabel 3850 8400 2    50   BiDi ~ 0
+Text GLabel 2450 8900 0    50   BiDi ~ 0
 RF_RST
 $Comp
 L mainboard-rescue:C_Small-Device C11
@@ -573,8 +571,6 @@ Wire Wire Line
 Connection ~ 3050 4250
 Text GLabel 1350 7200 0    50   Input ~ 0
 BATT_P
-Text GLabel 3950 7100 2    50   BiDi ~ 0
-M_FAULT
 Text GLabel 3850 8800 2    50   Output ~ 0
 BURN1
 Text GLabel 3850 8900 2    50   Output ~ 0
@@ -957,7 +953,7 @@ U 1 1 5DF0F8EE
 P 10100 9800
 F 0 "TP1" H 10158 9918 50  0000 L CNN
 F 1 "TestPoint" H 10158 9827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 10300 9800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10300 9800 50  0001 C CNN
 F 3 "~" H 10300 9800 50  0001 C CNN
 	1    10100 9800
 	1    0    0    -1  
@@ -968,7 +964,7 @@ U 1 1 5DF0FC08
 P 10550 9800
 F 0 "TP2" H 10608 9918 50  0000 L CNN
 F 1 "TestPoint" H 10608 9827 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5015_Micro-Minature" H 10750 9800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10750 9800 50  0001 C CNN
 F 3 "~" H 10750 9800 50  0001 C CNN
 	1    10550 9800
 	1    0    0    -1  
@@ -1803,8 +1799,6 @@ Text Notes 4850 8150 0    50   ~ 0
 SERCOM4\n
 Wire Wire Line
 	3850 7000 3950 7000
-Wire Wire Line
-	3850 7100 3950 7100
 Text GLabel 2450 7700 0    50   Output ~ 0
 FLASH_MOSI
 Text GLabel 2450 7800 0    50   Input ~ 0
@@ -2204,4 +2198,57 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 14100 6600 50 
 $EndComp
 Text Notes 6400 4400 0    100  ~ 0
 TODO\n- verify SERCOM\n- check fit in CAD\n- place fiducals\n- add rbf\n- fit SD maybe?
+Text GLabel 13200 6700 0    59   Input ~ 0
+SCK
+Text GLabel 13200 6500 0    59   Input ~ 0
+MOSI
+Text GLabel 13200 6900 0    59   Output ~ 0
+MISO
+Text GLabel 13200 6400 0    59   Input ~ 0
+SD_CS
+NoConn ~ 13200 7000
+NoConn ~ 13200 6300
+$Comp
+L power:GND #PWR0109
+U 1 1 5F636FAE
+P 14900 7200
+F 0 "#PWR0109" H 14900 6950 50  0001 C CNN
+F 1 "GND" H 14905 7027 50  0000 C CNN
+F 2 "" H 14900 7200 50  0001 C CNN
+F 3 "" H 14900 7200 50  0001 C CNN
+	1    14900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F637458
+P 12950 6800
+F 0 "#PWR0110" H 12950 6550 50  0001 C CNN
+F 1 "GND" V 12955 6672 50  0000 R CNN
+F 2 "" H 12950 6800 50  0001 C CNN
+F 3 "" H 12950 6800 50  0001 C CNN
+	1    12950 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12950 6800 13200 6800
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5F644092
+P 12950 6600
+F 0 "#PWR0111" H 12950 6450 50  0001 C CNN
+F 1 "+3V3" V 12965 6728 50  0000 L CNN
+F 2 "" H 12950 6600 50  0001 C CNN
+F 3 "" H 12950 6600 50  0001 C CNN
+	1    12950 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12950 6600 13200 6600
+Text GLabel 3850 7800 2    59   Output ~ 0
+SD_CS
+Text GLabel 3850 8400 2    50   BiDi ~ 0
+M_FAULT
+Text GLabel 2450 9100 0    50   BiDi ~ 0
+RF_CS
 $EndSCHEMATC
