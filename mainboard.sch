@@ -2164,14 +2164,10 @@ F 3 "" H 16100 2000 50  0001 C CNN
 	1    16100 2000
 	0    -1   -1   0   
 $EndComp
-Text Notes 7750 3750 0    100  ~ 20
-done
 Text GLabel 14400 5250 0    50   BiDi ~ 0
 RF_IO0
 Text GLabel 2450 7400 0    50   BiDi ~ 0
 RF_IO0
-Text Notes 7900 3950 0    100  ~ 20
-done
 Wire Wire Line
 	15600 2100 15400 2100
 $Comp
@@ -2196,8 +2192,6 @@ F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 14100 6600 50 
 	1    14100 6600
 	1    0    0    -1  
 $EndComp
-Text Notes 6400 4400 0    100  ~ 0
-TODO\n- verify SERCOM\n- check fit in CAD\n- place fiducals\n- add rbf\n- fit SD maybe?
 Text GLabel 13200 6700 0    59   Input ~ 0
 SCK
 Text GLabel 13200 6500 0    59   Input ~ 0
