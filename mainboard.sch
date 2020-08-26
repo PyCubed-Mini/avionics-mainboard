@@ -2251,4 +2251,77 @@ Text GLabel 3850 8400 2    50   BiDi ~ 0
 M_FAULT
 Text GLabel 2450 9100 0    50   BiDi ~ 0
 RF_CS
+$Comp
+L Device:Crystal Y1
+U 1 1 5F84E26C
+P 2050 6850
+F 0 "Y1" V 2004 6981 50  0000 L CNN
+F 1 "Crystal" V 2095 6981 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2050 6850 50  0001 C CNN
+F 3 "~" H 2050 6850 50  0001 C CNN
+	1    2050 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L mainboard-rescue:C_Small-Device C14
+U 1 1 5F84FE74
+P 1700 6750
+F 0 "C14" V 1929 6750 50  0000 C CNN
+F 1 "10pF" V 1838 6750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1700 6750 50  0001 C CNN
+F 3 "~" H 1700 6750 50  0001 C CNN
+	1    1700 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L mainboard-rescue:C_Small-Device C15
+U 1 1 5F850793
+P 1700 6950
+F 0 "C15" V 1837 6950 50  0000 C CNN
+F 1 "10pF" V 1928 6950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1700 6950 50  0001 C CNN
+F 3 "~" H 1700 6950 50  0001 C CNN
+	1    1700 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 6750 1900 6750
+Wire Wire Line
+	1900 6750 1900 6700
+Wire Wire Line
+	1900 6700 2050 6700
+Wire Wire Line
+	1800 6950 1900 6950
+Wire Wire Line
+	1900 6950 1900 7000
+Wire Wire Line
+	1900 7000 2050 7000
+Wire Wire Line
+	2450 6900 2350 6900
+Wire Wire Line
+	2350 6900 2350 6700
+Wire Wire Line
+	2350 6700 2050 6700
+Connection ~ 2050 6700
+Wire Wire Line
+	2450 7000 2050 7000
+Connection ~ 2050 7000
+Wire Wire Line
+	1600 6750 1600 6850
+$Comp
+L power:GND #PWR04
+U 1 1 5F8B8A3D
+P 1450 6850
+F 0 "#PWR04" H 1450 6600 50  0001 C CNN
+F 1 "GND" H 1455 6677 50  0000 C CNN
+F 2 "" H 1450 6850 50  0001 C CNN
+F 3 "" H 1450 6850 50  0001 C CNN
+	1    1450 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 6850 1600 6850
+Connection ~ 1600 6850
+Wire Wire Line
+	1600 6850 1600 6950
 $EndSCHEMATC
