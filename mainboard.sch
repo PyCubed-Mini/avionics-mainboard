@@ -461,34 +461,34 @@ Connection ~ 4650 7900
 $Comp
 L mainboard-rescue:R_US-Device R8
 U 1 1 5DB33981
-P 1950 8350
-F 0 "R8" H 2050 8150 50  0000 C CNN
-F 1 "10K" H 2050 8250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1990 8340 50  0001 C CNN
-F 3 "~" H 1950 8350 50  0001 C CNN
-	1    1950 8350
+P 1850 8350
+F 0 "R8" H 1950 8150 50  0000 C CNN
+F 1 "10K" H 1950 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1890 8340 50  0001 C CNN
+F 3 "~" H 1850 8350 50  0001 C CNN
+	1    1850 8350
 	-1   0    0    1   
 $EndComp
 $Comp
 L mainboard-rescue:R_US-Device R7
 U 1 1 5DB33987
-P 1800 8450
-F 0 "R7" H 1700 8400 50  0000 C CNN
-F 1 "10K" H 1700 8500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1840 8440 50  0001 C CNN
-F 3 "~" H 1800 8450 50  0001 C CNN
-	1    1800 8450
+P 1700 8450
+F 0 "R7" H 1600 8400 50  0000 C CNN
+F 1 "10K" H 1600 8500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1740 8440 50  0001 C CNN
+F 3 "~" H 1700 8450 50  0001 C CNN
+	1    1700 8450
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3V3 #PWR010
 U 1 1 5DB3398D
-P 1800 8200
-F 0 "#PWR010" H 1800 8050 50  0001 C CNN
-F 1 "+3V3" H 1815 8373 50  0000 C CNN
-F 2 "" H 1800 8200 50  0001 C CNN
-F 3 "" H 1800 8200 50  0001 C CNN
-	1    1800 8200
+P 1700 8200
+F 0 "#PWR010" H 1700 8050 50  0001 C CNN
+F 1 "+3V3" H 1715 8373 50  0000 C CNN
+F 2 "" H 1700 8200 50  0001 C CNN
+F 3 "" H 1700 8200 50  0001 C CNN
+	1    1700 8200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -554,8 +554,6 @@ Text GLabel 2450 7300 0    50   BiDi ~ 0
 RF_IO1
 Text GLabel 3850 8400 2    50   BiDi ~ 0
 RF_RST
-Text GLabel 2450 7400 0    50   BiDi ~ 0
-RF_BUSY
 $Comp
 L mainboard-rescue:C_Small-Device C11
 U 1 1 5DBB39D1
@@ -860,9 +858,9 @@ F 3 "" H 6800 7150 50  0001 C CNN
 	1    6800 7150
 	1    0    0    -1  
 $EndComp
-Text GLabel 1700 8600 0    59   BiDi ~ 0
+Text GLabel 1600 8600 0    59   BiDi ~ 0
 SDA2
-Text GLabel 1700 8500 0    59   BiDi ~ 0
+Text GLabel 1600 8500 0    59   BiDi ~ 0
 SCL2
 $Comp
 L power:+3V3 #PWR030
@@ -1166,10 +1164,6 @@ $EndComp
 Wire Wire Line
 	9450 5850 9450 6050
 Connection ~ 9450 6050
-Text GLabel 12600 5650 2    59   Output ~ 0
-~DRDY
-Wire Wire Line
-	12600 5650 12500 5650
 $Comp
 L Connector:TestPoint TP1
 U 1 1 5DF0F8EE
@@ -1874,8 +1868,6 @@ $EndComp
 Connection ~ 14400 4550
 Text GLabel 14400 4750 0    50   BiDi ~ 0
 RF_RST
-Text GLabel 15600 4950 2    50   Output ~ 0
-RF_BUSY
 $Comp
 L power:GND #PWR070
 U 1 1 5F3BC393
@@ -2006,21 +1998,21 @@ Connection ~ 4750 10100
 Text Label 1350 9900 0    50   ~ 0
 ~RESET
 Wire Wire Line
-	1700 8600 1800 8600
+	1600 8600 1700 8600
 Wire Wire Line
-	1700 8500 1950 8500
+	1600 8500 1850 8500
 Wire Wire Line
-	1800 8600 2450 8600
-Connection ~ 1800 8600
+	1700 8600 2450 8600
+Connection ~ 1700 8600
 Wire Wire Line
-	1950 8500 2450 8500
-Connection ~ 1950 8500
+	1850 8500 2450 8500
+Connection ~ 1850 8500
 Wire Wire Line
-	1800 8200 1950 8200
+	1700 8200 1850 8200
 Wire Wire Line
-	1800 8300 1800 8200
-Connection ~ 1800 8200
-Text Notes 1400 8450 0    50   ~ 0
+	1700 8300 1700 8200
+Connection ~ 1700 8200
+Text Notes 1300 8450 0    50   ~ 0
 SERCOM1
 Text Notes 4850 8150 0    50   ~ 0
 SERCOM4\n
@@ -2044,7 +2036,7 @@ Wire Wire Line
 	4500 7900 4500 8000
 Wire Wire Line
 	3850 8200 4650 8200
-Text Notes 1900 7650 0    50   ~ 0
+Text Notes 1950 8050 1    50   ~ 0
 SERCOM0/2
 Text Notes 4650 9250 0    50   ~ 0
 SERCOM7
@@ -2471,4 +2463,18 @@ F 3 "" H 16100 2050 50  0001 C CNN
 	1    16100 2050
 	1    0    0    -1  
 $EndComp
+Text Notes 6400 4400 0    100  ~ 0
+TODO\n- verify SERCOM\n- check fit in CAD\n- place fiducals
+Text Notes 7700 4050 0    100  ~ 20
+done
+Text GLabel 14400 5250 0    50   BiDi ~ 0
+RF_IO0
+Text GLabel 2450 7400 0    50   BiDi ~ 0
+RF_IO0
+Text GLabel 2450 7600 0    50   Output ~ 0
+ADC_DRDY
+Text GLabel 12600 5650 2    50   Output ~ 0
+ADC_DRDY
+Wire Wire Line
+	12600 5650 12500 5650
 $EndSCHEMATC
