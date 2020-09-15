@@ -10,12 +10,18 @@
 #define MICROPY_PORT_C        (0)
 #define MICROPY_PORT_D 		  (0)
 
+#define SPI_FLASH_WP_PIN            &pin_PA10
+#define SPI_FLASH_HOLD_PIN          &pin_PA11
+
+// External flash MR2xH40 MRAM
+#define EXTERNAL_FLASH_QSPI_SINGLE
+#define EXTERNAL_FLASH_NO_JEDEC
+
+#define AUTORESET_DELAY_MS 500
+
 #define CIRCUITPY_INTERNAL_NVM_SIZE 8192
 
 #define BOARD_FLASH_SIZE (FLASH_SIZE - 0x4000 - CIRCUITPY_INTERNAL_NVM_SIZE)
-
-// External flash W25Q80DV
-#define EXTERNAL_FLASH_QSPI_DUAL
 
 #define BOARD_HAS_CRYSTAL 1
 
