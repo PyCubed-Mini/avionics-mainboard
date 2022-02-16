@@ -2,15 +2,14 @@
 #define BOARD_CONFIG_H
 
 #define VENDOR_NAME "maholli"
-#define PRODUCT_NAME "PyCubedMini"
+#define PRODUCT_NAME "PyCubedMiniv02"
 #define VOLUME_LABEL "PYCUBEDBOOT"
-#define INDEX_URL "http://pycubed.org"
-#define BOARD_ID "PyCubedMini"
+#define INDEX_URL "https://pycubed.org"
+#define BOARD_ID "PyCubedMini_v02_J20"
 
 #define USB_VID 0x04D8
 #define USB_PID 0xEDBE // PID sublicensed from Microchip
 
-#define LED_PIN PIN_PA03 // not actually used, but build fails without it?
 #define BOARD_NEOPIXEL_PIN PIN_PA21
 #define BOARD_NEOPIXEL_COUNT 1
 
