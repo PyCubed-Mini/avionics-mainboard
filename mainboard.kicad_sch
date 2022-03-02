@@ -6,11 +6,12 @@
 
   (title_block
     (title "PyCubed Mini")
-    (date "2022-02-17")
+    (date "2022-03-02")
     (rev "v02")
-    (company "RExLab Stanford University")
+    (company "RExLab Carnegie Mellon University")
     (comment 1 "Z.Manchester")
-    (comment 2 "M.Holliday")
+    (comment 2 "N.Khera")
+    (comment 3 "M.Holliday")
   )
 
   (lib_symbols
