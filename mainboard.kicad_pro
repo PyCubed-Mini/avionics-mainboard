@@ -392,12 +392,12 @@
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
+      "gencad": "mainboard.cad",
       "idf": "",
       "netlist": "mainboard.net",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "mainboard.step",
+      "vrml": "mainboard.wrl"
     },
     "page_layout_descr_file": ""
   },

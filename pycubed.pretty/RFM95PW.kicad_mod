@@ -1,6 +1,6 @@
 (footprint "RFM95PW" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 6221D0FF)
+  (tedit 62224040)
   (attr through_hole)
   (fp_text reference "U24" (at 1.016 -2.667) (layer "F.SilkS") hide
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify right top))
@@ -98,4 +98,9 @@
     (solder_mask_margin 0.0635) (tstamp 41e01a5b-93cf-4702-b28b-8739b8248f07))
   (pad "17" smd rect (at 3.15 -1.25) (size 12.5 5.7) (layers "F.Cu" "F.Mask")
     (solder_mask_margin 0.0635) (zone_connect 2) (tstamp fedd5ca2-3605-4c64-95f2-1a7d9f973027))
+  (model "${KIPRJMOD}/kicad-libs/3d/RFM98PW.step"
+    (offset (xyz -17.5 -9.5 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
