@@ -3839,7 +3839,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c6e901fe-d10e-479d-b6f5-7383523c0681)
   )
-  (text "USB CONN" (at 340.106 24.892 0)
+  (text "USB CONN" (at 345.059 24.638 0)
     (effects (font (size 5.0038 5.0038)) (justify left bottom))
     (uuid cf5363c7-e3f9-4f83-aa8c-d2c7d906b238)
   )
@@ -5604,8 +5604,8 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005e0a50da)
     (property "Reference" "J3" (id 0) (at 362.712 191.135 0))
-    (property "Value" "xf2m-2415-1a" (id 1) (at 362.712 193.4464 0))
-    (property "Footprint" "pycubed:XF2M-2415-1A" (id 2) (at 370.332 195.326 0)
+    (property "Value" "XF3M-2415-1B" (id 1) (at 362.712 193.4464 0))
+    (property "Footprint" "pycubed:XF3M-2415-1B" (id 2) (at 370.332 195.326 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (property "Datasheet" "http://docs-emea.rs-online.com/webdocs/0fd2/0900766b80fd28a0.pdf" (id 3) (at 370.332 197.866 0)
@@ -7466,7 +7466,7 @@
       (reference "J2") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Molex_47346-0001")
     )
     (path "/00000000-0000-0000-0000-00005e0a50da"
-      (reference "J3") (unit 1) (value "xf2m-2415-1a") (footprint "pycubed:XF2M-2415-1A")
+      (reference "J3") (unit 1) (value "XF3M-2415-1B") (footprint "pycubed:XF3M-2415-1B")
     )
     (path "/00000000-0000-0000-0000-00005dae07e7"
       (reference "J4") (unit 1) (value "2x5 Pin Header 1.27mm") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD")
