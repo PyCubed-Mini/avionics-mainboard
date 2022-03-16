@@ -1,9 +1,0 @@
-Manufacturer=SEMTECH
-PartNumber=SX1278IMLTRT
-PartCategory=Integrated Circuit
-PackageCategory=Quad Flat No-Lead
-PinCount=29
-Version=2.1
-Released=2018-07-07 09:16:51
-Downloaded=2019-10-14 21:21:39
-3D=Y
