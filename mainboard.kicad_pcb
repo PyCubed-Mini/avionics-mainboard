@@ -77,7 +77,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../New folder/")
+      (outputdirectory "gerbers/mainboard (6-9-22)")
     )
   )
 
