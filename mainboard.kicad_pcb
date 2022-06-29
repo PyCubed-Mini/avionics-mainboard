@@ -3421,7 +3421,7 @@
 
   (footprint "Connector_PinSocket_1.27mm:PinSocket_1x10_P1.27mm_Vertical" (layer "F.Cu")
     (tedit 5A19A428) (tstamp 59003738-4aa0-4154-9110-c4a77a776b7a)
-    (at 126.7192 114.462789 180)
+    (at 126.719203 114.462789 180)
     (descr "Through hole straight socket strip, 1x10, 1.27mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x10 1.27mm single row")
     (property "Sheetfile" "mainboard.kicad_sch")
@@ -3482,7 +3482,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "${KIPRJMOD}/kicad-libs/3d/SLM-110-01-G-S.stp"
+    (model "${KIPRJMOD}/kicad-libs/3d/TMS-110-01-G-S.step"
       (offset (xyz 0 -5.715 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 -90))
