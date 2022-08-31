@@ -10283,7 +10283,7 @@
   (gr_text "30-AUG-22" (at 161.225 93) (layer "F.SilkS") (tstamp 3a14cb77-d950-487b-b02b-1cbbf179f07c)
     (effects (font (size 0.635 0.635) (thickness 0.1524)) (justify right))
   )
-  (gr_text "Rev A/01" (at 163.15 95.25) (layer "F.SilkS") (tstamp 6123120d-1c2a-4385-a300-a11a2783850a)
+  (gr_text "Rev B/03" (at 163.15 95.25) (layer "F.SilkS") (tstamp 6123120d-1c2a-4385-a300-a11a2783850a)
     (effects (font (size 0.635 0.635) (thickness 0.1524)) (justify right))
   )
 
