@@ -4598,7 +4598,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 1231e580-b226-4aae-b904-72ba953601a0)
   )
-  (text "WDT enabled\nwhen installed" (at 14.478 188.214 0)
+  (text "WDT enabled\nwhen installed" (at 13.716 188.214 0)
     (effects (font (size 0.889 0.889)) (justify left bottom))
     (uuid 13f281e7-026c-43bf-b7f0-4749ba1dd7f1)
   )
@@ -5869,7 +5869,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c6e5301)
     (property "Reference" "R1" (id 0) (at 76.327 124.333 0))
-    (property "Value" "10K" (id 1) (at 76.835 126.365 0))
+    (property "Value" "100K" (id 1) (at 77.47 126.365 0))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 72.39 125.095 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -6026,7 +6026,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005dab9e18)
     (property "Reference" "R12" (id 0) (at 26.67 185.801 0))
-    (property "Value" "10K" (id 1) (at 26.67 187.833 0))
+    (property "Value" "3.3K" (id 1) (at 26.289 187.833 0))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 29.21 186.563 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7760,7 +7760,7 @@
     (in_bom yes) (on_board yes)
     (uuid 1cbf010b-d192-4929-86a8-68a62710eb76)
     (property "Reference" "R2" (id 0) (at 61.976 131.572 90))
-    (property "Value" "330" (id 1) (at 61.976 133.477 90))
+    (property "Value" "0" (id 1) (at 61.976 133.477 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 61.722 130.175 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -9765,10 +9765,10 @@
       (reference "Q23") (unit 2) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
     (path "/00000000-0000-0000-0000-00005c6e5301"
-      (reference "R1") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R1") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/1cbf010b-d192-4929-86a8-68a62710eb76"
-      (reference "R2") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R2") (unit 1) (value "0") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005dc61a47"
       (reference "R3") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -9798,7 +9798,7 @@
       (reference "R11") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005dab9e18"
-      (reference "R12") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R12") (unit 1) (value "3.3K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005f53229d"
       (reference "R13") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
