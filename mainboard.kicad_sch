@@ -3059,8 +3059,8 @@
   (no_connect (at 87.884 60.325) (uuid 341821ca-97e3-416a-a827-efb7cb89afe8))
   (no_connect (at 399.034 124.46) (uuid 350f6fa7-9f0c-4ca4-9713-a3ba09c68033))
   (no_connect (at 339.852 116.84) (uuid 35854e7b-221d-4f26-a26f-0a854f04f55b))
-  (no_connect (at 339.852 119.38) (uuid 35854e7b-221d-4f26-a26f-0a854f04f55b))
-  (no_connect (at 339.852 124.46) (uuid 35854e7b-221d-4f26-a26f-0a854f04f55b))
+  (no_connect (at 339.852 119.38) (uuid 35854e7b-221d-4f26-a26f-0a854f04f55c))
+  (no_connect (at 339.852 124.46) (uuid 35854e7b-221d-4f26-a26f-0a854f04f55d))
   (no_connect (at 251.333 177.673) (uuid 379061f5-23cf-47e8-bb5c-941df1a08141))
   (no_connect (at 282.702 96.52) (uuid 3a0bdf19-5fd6-4a6d-86ad-0959ffa0c064))
   (no_connect (at 123.444 55.245) (uuid 483662f4-2907-4c59-96cf-6cd931c135e9))
@@ -8751,7 +8751,7 @@
     (uuid bd92b9d3-e82b-4176-883d-9f7ee4202081)
     (property "Reference" "J3" (id 0) (at 345.948 103.632 0))
     (property "Value" "SFMC-110-01-L-D" (id 1) (at 346.075 132.842 0))
-    (property "Footprint" "Connector_PinSocket_1.27mm:PinSocket_2x10_P1.27mm_Vertical" (id 2) (at 344.932 116.84 0)
+    (property "Footprint" "mainboard:SAMTEC_SFC-110-T2-F-D-A-TR" (id 2) (at 344.932 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 344.932 116.84 0)
@@ -9601,7 +9601,7 @@
       (reference "J2") (unit 1) (value "TMS-110-01-G-S") (footprint "Connector_PinSocket_1.27mm:PinSocket_1x10_P1.27mm_Vertical")
     )
     (path "/bd92b9d3-e82b-4176-883d-9f7ee4202081"
-      (reference "J3") (unit 1) (value "SFMC-110-01-L-D") (footprint "Connector_PinSocket_1.27mm:PinSocket_2x10_P1.27mm_Vertical")
+      (reference "J3") (unit 1) (value "SFMC-110-01-L-D") (footprint "mainboard:SAMTEC_SFC-110-T2-F-D-A-TR")
     )
     (path "/33ab456b-cf94-4695-907a-166a9700ece1"
       (reference "J4") (unit 1) (value "CLP-105-02-X-DH-A") (footprint "mainboard:SAMTEC_CLP-105-02-X-DH-A")
@@ -9729,6 +9729,12 @@
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/7f0c9a56-eb95-4e54-9cc4-aea69aa89e9e"
       (reference "Q18") (unit 1) (value "MMBT2907") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
+    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/2fc32ae5-0f59-4b51-8220-4ec0d11d3fb5"
+      (reference "Q19") (unit 1) (value "BSS138DWQ-7") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+    )
+    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/013e9311-b29b-4c23-9447-12a0dfc99e64"
+      (reference "Q19") (unit 2) (value "BSS138DWQ-7") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+    )
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/40202688-3447-41dd-b28a-6ee7d4dca54f"
       (reference "Q20") (unit 1) (value "BSS138DWQ-7") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
@@ -9741,20 +9747,17 @@
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/fd4c629a-9a89-4a3a-ab2c-b60c98e400f8"
       (reference "Q21") (unit 2) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
-    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/2fc32ae5-0f59-4b51-8220-4ec0d11d3fb5"
-      (reference "Q22") (unit 1) (value "BSS138DWQ-7") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
-    )
-    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/013e9311-b29b-4c23-9447-12a0dfc99e64"
-      (reference "Q22") (unit 2) (value "BSS138DWQ-7") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
-    )
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/7d0ba366-3197-4fe2-802c-584a9272a77a"
-      (reference "Q23") (unit 1) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+      (reference "Q22") (unit 1) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/a5ae381c-2593-4678-8b67-af85f16c72b1"
-      (reference "Q23") (unit 2) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
+      (reference "Q22") (unit 2) (value "MBT2222ADW1T1") (footprint "Package_TO_SOT_SMD:SOT-363_SC-70-6")
     )
     (path "/00000000-0000-0000-0000-00005c6e5301"
       (reference "R1") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/f4a81e09-a91f-4348-bdf4-5c5addec82b1"
+      (reference "R2") (unit 1) (value "200K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005dc61a47"
       (reference "R3") (unit 1) (value "100K") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -10052,9 +10055,6 @@
     )
     (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/066d2320-4fc9-48a3-a163-1ca10dcfc048"
       (reference "R106") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0603_1608Metric")
-    )
-    (path "/89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a/f4a81e09-a91f-4348-bdf4-5c5addec82b1"
-      (reference "R107") (unit 1) (value "200K") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00005c6b86a4"
       (reference "SW1") (unit 1) (value "KMR231NG") (footprint "mainboard:BTN_KMR2_4.6X2.8")
