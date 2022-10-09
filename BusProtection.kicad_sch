@@ -6,8 +6,8 @@
 
   (title_block
     (title "PyCubed Mini")
-    (date "2022-09-06")
-    (rev "B1/04")
+    (date "2022-10-09")
+    (rev "B2/01")
     (company "RExLab Carnegie Mellon University")
     (comment 1 "Z. Manchester")
     (comment 2 "N. Khera")
@@ -1991,7 +1991,7 @@
     (uuid 7fe20cb5-538e-45b0-83a7-7d55b200c3b1)
   )
   (text "mainboard" (at 350.393 245.872 0)
-    (effects (font (size 3.9878 3.9878) (thickness 0.7976) bold) (justify left bottom))
+    (effects (font (size 3.81 3.81) (thickness 0.7976) bold) (justify left bottom))
     (uuid da6ac666-745b-48f9-8fcf-87edf60be32d)
   )
   (text "SPI Bus Protection - Radio" (at 286.258 35.052 0)
