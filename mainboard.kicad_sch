@@ -5478,7 +5478,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e4f79e06-60e2-46a6-b09a-f2aa4cf4f00d)
   )
-  (text "I2C2 ADDR" (at 176.784 168.91 0)
+  (text "I2C1 ADDR" (at 176.657 168.91 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e7231d8c-619b-4a05-95a6-2271c946fda7)
   )
