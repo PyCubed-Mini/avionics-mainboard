@@ -11251,7 +11251,7 @@
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23" (at 41.656 192.024 0)
       (effects (font (size 1.27 1.27) italic) (justify left) hide)
     )
-    (property "Datasheet" "" (at 46.736 193.929 0)
+    (property "Datasheet" "https://www.infineon.com/dgdl/irlml2060pbf.pdf?fileId=5546d462533600a401535664b7fb25ee" (at 46.736 193.929 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
     (pin "1" (uuid dfdab681-d174-423a-bfd1-07c1463d3b54))
