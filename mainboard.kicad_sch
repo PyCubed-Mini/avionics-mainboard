@@ -6,7 +6,7 @@
 
   (title_block
     (title "PyCubed Mini")
-    (date "2023-06-12")
+    (date "2023-06-18")
     (rev "B3/03")
     (company "RExLab Carnegie Mellon University")
     (comment 1 "Z.Manchester")
@@ -9725,7 +9725,7 @@
   (symbol (lib_id "Device:R_US") (at 28.448 193.929 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2df3b16f-f57f-4581-bf6b-44f528fcb397)
-    (property "Reference" "R99" (at 24.13 192.913 0)
+    (property "Reference" "R92" (at 24.13 192.913 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "DNI (0R)" (at 22.606 195.072 0)
@@ -9742,7 +9742,7 @@
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
-          (reference "R99") (unit 1)
+          (reference "R92") (unit 1)
         )
       )
     )
@@ -10042,7 +10042,7 @@
   (symbol (lib_id "Device:R_US") (at 57.785 199.898 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42e2b61c-3124-4e7e-b66b-be77567d96c5)
-    (property "Reference" "R100" (at 57.785 197.993 90)
+    (property "Reference" "R93" (at 57.785 197.993 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "200K" (at 57.785 202.311 90)
@@ -10059,7 +10059,7 @@
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
-          (reference "R100") (unit 1)
+          (reference "R93") (unit 1)
         )
       )
     )
@@ -10348,7 +10348,7 @@
   (symbol (lib_id "Device:R_US") (at 394.97 136.144 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 550f43c4-2c42-467a-ba03-fb27bd1aa884)
-    (property "Reference" "R81" (at 392.811 136.144 90)
+    (property "Reference" "R91" (at 392.811 136.144 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 397.383 136.144 90)
@@ -10365,7 +10365,7 @@
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
-          (reference "R81") (unit 1)
+          (reference "R91") (unit 1)
         )
       )
     )
@@ -10534,7 +10534,7 @@
   (symbol (lib_id "Device:R_US") (at 249.555 86.233 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6480f842-e020-4789-8511-5c246ee844ee)
-    (property "Reference" "R101" (at 246.253 85.217 0)
+    (property "Reference" "R94" (at 246.253 85.217 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 246.253 86.995 0)
@@ -10551,7 +10551,7 @@
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
-          (reference "R101") (unit 1)
+          (reference "R94") (unit 1)
         )
       )
     )
@@ -11298,7 +11298,7 @@
   (symbol (lib_id "Transistor_FET:IRLML2060") (at 46.736 193.929 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aed765d1-1aaf-4a57-91c9-976a4a50110d)
-    (property "Reference" "Q21" (at 41.529 193.04 0)
+    (property "Reference" "Q19" (at 41.529 193.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "IRLML2803" (at 41.529 195.326 0)
@@ -11316,7 +11316,7 @@
     (instances
       (project "mainboard"
         (path "/1aa2047c-1463-47dc-8fa9-594d0cbf3c24"
-          (reference "Q21") (unit 1)
+          (reference "Q19") (unit 1)
         )
       )
     )
