@@ -11459,7 +11459,7 @@
     (property "Value" "BNO085" (at 365.125 105.791 0)
       (effects (font (size 1.27 1.0795)))
     )
-    (property "Footprint" "mainboard:BNO085" (at 365.125 134.874 0)
+    (property "Footprint" "mainboard:LGA-28" (at 365.125 134.874 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 365.125 134.874 0)
