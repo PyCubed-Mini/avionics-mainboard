@@ -501,8 +501,20 @@
       ""
     ],
     [
-      "89e9ad27-deb2-49f4-bcf8-1a7a63ce9e3a",
-      "Bus Protection"
+      "0f312518-ce8f-4bb8-97ab-14fa36a022c9",
+      "USB and External Power"
+    ],
+    [
+      "287b7d11-37b4-4421-884c-55cfba3fbbe2",
+      "MCU"
+    ],
+    [
+      "f5f499ea-8972-4b2e-b8a6-a21094b6e29f",
+      "Storage"
+    ],
+    [
+      "f5f3fb94-8d31-443e-9822-9f3cdb7b8b3f",
+      "Peripherals"
     ]
   ],
   "text_variables": {}
