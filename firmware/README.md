@@ -1,9 +1,61 @@
-# Usage
+# PyCubed-Mini Bootloader
+## Setup
+```
+git clone git@github.com:PyCubed-Mini/uf2-samdx1.git
+cd uf2-samdx1
+```
+## Build
+```
+cp <path/to/bootloader_config> ./boards/pycubedmini/
+make BOARD=pycubedmini
+```
+Built .bin and .uf2 files can be found in `./build/pycubedmini/`
+## Flash
+Refer to this Adafruit article to flash the bootloader [https://learn.adafruit.com/how-to-program-samd-bootloaders]()
 
-Most all tutorials and quick start materials from https://pycubed.org/resources pertain to PyCubed Mini as well. When in doubt, look there for questions first. 
+This process (usually) needs to be performed only once for a fresh ATSAMD51 chip.
 
-## 📅 2022-02-16
-Updating from older CircuitPython firmware to 7.2. Put into bootloader mode, copy CURRENT.UF2 from `PYCUBEDBOOT` drive to your computer as a backup. Then update the bootloader by copying [update_bootloader.uf2](https://github.com/spacecraft-design-lab-2019/avionics-motherboard/blob/zac-updates/firmware/pycubedminiv02/update_bootloader.uf2) to the `PYCUBEDBOOT` drive. Board will unmount. BE PATIENT. It will eventually remount to your computer in bootloader mode again. Then copy over [firmware.uf2](https://github.com/spacecraft-design-lab-2019/avionics-motherboard/blob/zac-updates/firmware/pycubedminiv02/firmware.uf2). Details instructions [here](https://pycubed.org/Updating-PyCubed-cbc8b47a677549ed98fc5b23b5a04fac), just note PyCubed Mini it's available from https://circuitpython.org/downloads?q=pycubed yet. 
+# PyCubed-Mini Firmware
 
-Once updated, your pycubedmini.py library will not work.
-- See [flight-software max-fsw branch](https://github.com/spacecraft-design-lab-2019/flight-software/tree/max-fsw/board-side) for updated syntax. Copy entire lib directory from that repo and replace the lib directory on your board.
+Refer to this adafruit article to install prerequisites
+[https://learn.adafruit.com/building-circuitpython]()
+## Setup
+#### Fetch the Code to Build
+```
+git clone https://github.com/adafruit/circuitpython.git
+cd circuitpython
+```
+#### Install Required Python Packages
+```
+# Install pip if it is not already installed (Linux only)
+sudo apt install python3-pip
+
+# Install needed Python packages from pypi.org.
+pip3 install --upgrade -r requirements-dev.txt
+pip3 install --upgrade -r requirements-doc.txt
+```
+#### Fetch Submodules
+```
+# Build using the CircuitPython v8 release
+git checkout 8.2.10
+
+# Fetch the submodules needed for the atmel-samd port
+cd ports/atmel-samd
+make fetch-port-submodules
+```
+#### Build mpy-cross
+```
+cd ../..
+make -C mpy-cross
+```
+## Build
+```
+cd ports/atmel-samd
+cp <path/to/firmware_config> ./boards/pycubedmini/
+make BOARD=pycubedmini
+```
+Built UF2 files can be found under `./build-pycubedmini/firmware.uf2`
+## Flash
+Connect the mainboard to your PC via a USB cable. Double-tap the reset button to enter bootloader mode. In this mode, the mainboard mounts as a USB device named "PYCUBEDBOOT". Copy firmware.uf2 into PYCUBEDBOOT to install/update the CircuitPython firmware.
+
+This process (usually) needs to be performed only once for a fresh ATSAMD51 chip.
