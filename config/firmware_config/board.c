@@ -32,7 +32,7 @@
 
 void board_init(void) {
     pwmio_pwmout_obj_t pwm;
-    common_hal_pwmio_pwmout_construct(&pwm, &pin_PA23, 4096, 500, false);
+    common_hal_pwmio_pwmout_construct(&pwm, &pin_PB30, 4096, 500, false);
     common_hal_pwmio_pwmout_never_reset(&pwm);
 }
 
